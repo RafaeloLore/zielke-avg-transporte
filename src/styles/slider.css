@@ -1,0 +1,38 @@
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 400px; /* Высота слайдера */
+    margin: 0 auto; /* Центрируем слайдер */
+    overflow: hidden; /* Скрываем содержимое за границами */
+  }
+  
+  /* Слайды (картинки) */
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Увеличиваем изображение, чтобы оно покрывало всю область */
+    opacity: 0; /* По умолчанию картинки невидимы */
+    transition: opacity 1s ease-in-out; /* Плавный переход */
+  }
+  
+  /* Первый слайд видим по умолчанию */
+  .slide:first-child {
+    opacity: 1;
+  }
+  /* Активный слайд */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1; /* Видимый слайд */
+  }
+  

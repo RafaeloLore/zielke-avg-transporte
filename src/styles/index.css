@@ -1,0 +1,20 @@
+/* Сброс браузерных стилей (Reset CSS) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Учет границ и отступов внутри размеров элемента */
+  }
+  
+  html, body {
+    height: 100%; /*  высоту страницы на 100% */
+    font-family: Arial, sans-serif; /* Базовый шрифт */
+    color: #ffffff; /* Тёмный цвет текста */
+    z-index: -2;
+  }
+  
+ 
+  .bad{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+  }

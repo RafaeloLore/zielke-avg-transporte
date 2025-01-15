@@ -1,0 +1,115 @@
+
+  
+  /* Секция с видео */
+  .video-section {
+    position: relative;
+    height: 100vh; /* Высота экрана */
+    overflow: hidden; /* Скрываем лишнее видео */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  /* Видео на заднем фоне */
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Увеличиваем видео, чтобы покрывало экран */
+    z-index: -1; /* Помещаем видео за текстом */
+  }
+  
+  /* Контент поверх видео */
+  .video-content {
+    position: relative;
+    z-index: 1; /* Текст над видео */
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Тень для читаемости */
+  }
+  
+  .video-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .video-content p {
+    font-size: 1.5rem;
+  }
+  
+  /* Остальные секции */
+  .content-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .content-section:nth-child(odd) {
+    background-color: #fff; /* Чередуем цвет */
+  }
+  
+  .content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .content-section p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  .mainnav2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 90%; /* Заполняет всю ширину */
+
+  }
+  .navbar2 {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #ffffff; /* Цвет фона */
+    padding: 0px 0;
+    width: 100%; /* Заполняет всю ширину */
+    
+  }
+.navbar-menu2{
+  display: flex;
+  height: 70px;
+    align-items: center;
+    background-color: #ffffff; /* Белый фон меню */
+}
+.menu2-list{display: flex;
+  justify-content: center;
+  margin-right:2rem ;
+  padding: 0px 25px 0px 0px;
+  list-style: none; /* Убираем маркеры списка */
+
+
+
+}
+  
+.menu2-item{
+  margin: 0px 0px 0px 20px; /* Расстояние между пунктами меню */
+
+
+}
+.menu2-item a {
+  font-size: 15px;
+  text-decoration: none; /* Убираем подчеркивание */
+  color: #000000; /* Синий цвет текста */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Анимация смены цвета */
+
+}
+.menu2-item a:hover {
+  color: #fff;
+  background-color: #000000;
+}
+.menu2-item:hover{
+  background-color: #000000;
+}

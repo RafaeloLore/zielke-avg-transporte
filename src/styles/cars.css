@@ -1,0 +1,41 @@
+.sectioncarR1{
+   display: flex;
+   position: relative; /* Устанавливаем родителю относительное позиционирование */
+
+    background-color: rgba(255, 255, 255, 0.795);
+    z-index: 2;
+   padding: 20px;
+}
+h2{
+    padding: 20px;
+}
+.text-R1{
+    display: flex;
+    text-align: center;
+    color: black;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+p{
+    font-size: 25px;
+
+}
+.carR1{
+    width: auto;
+    max-height: 450px;
+    display: block; /* Убираем пробелы под изображением */
+}
+.text-overlay {
+    position: absolute; /* Абсолютное позиционирование для текста */
+    top: 90%; /* От центра экрана */
+    left: 20%; /* От центра экрана */
+    transform: translate(-50%, -50%); /* Центрируем текст */
+    color: white; /* Белый цвет текста */
+    text-align: center; /* Центрируем текст */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Тень для читаемости */
+    padding: 5px; /* Отступы вокруг текста */
+    font-size: 20px; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+    background-color: rgba(0, 0, 0, 0.753);
+  }

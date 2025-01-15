@@ -1,0 +1,67 @@
+/* Общий контейнер навбара */
+.mainnav{
+  display: flex;
+  justify-content: center;
+
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed; /* Фиксируем навбар на экране */
+    z-index: 1000; /* Высокий приоритет отображения */
+
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff; /* Цвет фона */
+    padding: 0px 0;
+    width: 70%; /* Заполняет всю ширину */
+
+  }
+  
+  /* Логотип */
+  .navbar-logo {
+
+    padding: 10px 0px 0px 2%;
+  }
+  
+  .logo {
+    max-width: 150px; /* Ограничиваем ширину логотипа */
+    height: auto; /* Сохраняем пропорции */
+    
+  }
+  
+  /* Меню */
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* Белый фон меню */
+  }
+  
+  .menu-list {
+    
+    display: flex;
+    justify-content: center;
+    margin-right:2rem ;
+    padding: 0px 25px 0px 0px;
+    list-style: none; /* Убираем маркеры списка */
+  }
+  
+  .menu-item {
+    
+    margin: 0px 0px 0px 25px; /* Расстояние между пунктами меню */
+    
+  }
+  
+  .menu-item a {
+    font-size: 18px;
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #000000; /* Синий цвет текста */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Анимация смены цвета */
+  }
+  
+  .menu-item a:hover {
+    color: #0056b3; /* Цвет при наведении */
+    border-bottom: solid 2px ;
+  }
+  
