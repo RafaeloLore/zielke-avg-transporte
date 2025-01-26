@@ -58,10 +58,13 @@
     color: #000000; /* Синий цвет текста */
     font-weight: bold;
     transition: color 0.3s ease; /* Анимация смены цвета */
+    text-transform: uppercase;
+    transition: 700ms ease;
+
   }
   
   .menu-item a:hover {
-    color: #0056b3; /* Цвет при наведении */
-    border-bottom: solid 2px ;
+    font-variation-settings: "wght" 582; 
+    letter-spacing: 1px;
   }
   

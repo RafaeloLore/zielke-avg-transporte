@@ -27,7 +27,7 @@ function ContactForm() {
   return (
     <form onSubmit={handleSubmit(onSubmit)} style={{ maxWidth: '400px', margin: '0 auto' }}>
       <div>
-        <label>Name:</label>
+        <label>NNName:</label>
         <input
           {...register('name', { required: 'Введите ваше имя' })}
           type="text"

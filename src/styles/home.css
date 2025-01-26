@@ -104,12 +104,12 @@
   color: #000000; /* Синий цвет текста */
   font-weight: bold;
   transition: color 0.3s ease; /* Анимация смены цвета */
-
+  cursor: pointer;
+padding: 25px;
 }
 .menu2-item a:hover {
   color: #fff;
   background-color: #000000;
-}
-.menu2-item:hover{
-  background-color: #000000;
+  transition: 700ms ease;
+
 }

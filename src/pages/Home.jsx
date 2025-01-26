@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import Slider from '../components/Slider';
 
 
 function Home() {
@@ -58,32 +59,56 @@ function Home() {
       </section>
 
      {/* Секция с CONTAINERTRANSPORTE */}
+     
       <div id="CONTAINERTRANSPORTE" className="sectioncarR1 ">
  
   <div className="CarR-1, slider">
+    
     <div className='slider'>
-        <img src="./R-1.jpg" alt="Slide 1"  className="carR1 , slide"  />
-        <img src="./R-2.jpg" alt="Slide 2"  className="carR1 , slide"  />
-        <img src="./R-3.jpg" alt="Slide 3"  className="carR1 , slide"  />
-        </div>
-        <div className="text-overlay">
+    <Slider
+  images={[
+    './R-1.jpg',
+    './R-2.jpg',
+    './R-3.jpg',
+  ]}
+/>
 
-        <h1>CONTAINERTRANSPORTE</h1>
         </div>
+        
       </div>
       <div className='text-R1'>
         <h2>CONTAINERTRANSPORTE
         </h2>
-    <p>Wenn Sie auf der Suche nach einem kompetenten Transportunternehmen für Container sind, dann sind Sie bei uns genau richtig! Wir sind mit unseren Containerchassis und langjähriger Erfahrung in der Branche bestens für einen Transport von 20-, 30-, 40- und 45-Fuß-Containern aufgestellt.</p>
+    <p>Wenn Sie auf der Suche nach einem kompetenten
+       Transportunternehmen für Container sind, dann sind Sie bei uns genau richtig! Wir sind mit unseren Containerchassis und langjähriger Erfahrung in der Branche bestens für einen Transport von 20-, 30-, 40- und 45-Fuß-Containern aufgestellt.</p>
       </div>
 </div>   
 
 {/* Секция с CONTAINERTRANSPORTE */}
 
 {/* Секция с SCHÜTTGUTTRANSPORTE */}
-<div id="SCHÜTTGUTTRANSPORTE" className="section, bad">
-  <h1>SCHÜTTGUTTRANSPORTE Section</h1>
-</div> 
+<div id="SCHÜTTGUTTRANSPORTE" className="sectioncarR1 ">
+ 
+  <div className="CarR-1, slider">
+    
+    <div className='slider'>
+    <Slider
+  images={[
+    './B-1.jpg',
+    './B-2.jpg',
+  ]}
+/>
+
+        </div>
+        
+      </div>
+      <div className='text-R1'>
+        <h2>SCHÜTTGUTTRANSPORTE
+
+        </h2>
+    <p>Unser Fuhrpark umfasst verschiedene Auflieger Typen. Wir haben thermoisolierte Kippmulden aber auch gewöhnliche Kippmulden aus Stahl. Dadurch können wir alle Arten von Schüttgütern transportieren. Egal ob es Bauschutt, Beton, Sand, Kies, Schotter, Asphalt oder sogar belastetes Material ist, wir sind für alles ausgerüstet und zertifiziert. Zudem sind viele unserer Fahrzeug mit Allradantrieb ausgestattet, wodurch wir praktisch auf jedem Untergrund unsere Fahrzeuge einsetzten können. Die engsten Be- und Entladestellen stellen für uns auch kein Problem dar, da unser Fuhrpark nicht nur Sattelzüge sondern auch Dreiachser beinhaltet.</p>
+      </div>
+</div>   
 
 
 {/* Секция с SCHÜTTGUTTRANSPORTE */}

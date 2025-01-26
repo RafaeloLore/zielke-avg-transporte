@@ -7,7 +7,7 @@
    padding: 20px;
 }
 h2{
-    padding: 20px;
+    padding: 30px;
 }
 .text-R1{
     display: flex;
@@ -16,7 +16,28 @@ h2{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-}
+    max-width:650px ;
+    margin-right: 50px;
+    
+    opacity: 0; /* Скрываем текст */
+    transform: translateY(20px); /* Смещаем текст вниз */
+    animation: fadeIn 1.5s ease-out forwards; /* Запускаем анимацию */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+
+
 p{
     font-size: 25px;
 
@@ -25,11 +46,13 @@ p{
     width: auto;
     max-height: 450px;
     display: block; /* Убираем пробелы под изображением */
+    object-fit: cover; /* Обрезка изображения для заполнения области */
+
 }
 .text-overlay {
     position: absolute; /* Абсолютное позиционирование для текста */
     top: 90%; /* От центра экрана */
-    left: 20%; /* От центра экрана */
+    left: 50%; /* От центра экрана */
     transform: translate(-50%, -50%); /* Центрируем текст */
     color: white; /* Белый цвет текста */
     text-align: center; /* Центрируем текст */
