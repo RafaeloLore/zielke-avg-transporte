@@ -64,3 +64,14 @@ p{
     font-weight: bold; /* Жирный шрифт */
     background-color: rgba(0, 0, 0, 0.753);
   }
+  .sectioncarR1 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .sectioncarR1.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

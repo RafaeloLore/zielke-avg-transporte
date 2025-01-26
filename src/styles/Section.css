@@ -1,0 +1,38 @@
+/* Секция */
+.section {
+    opacity: 0; /* По умолчанию скрыто */
+    transform: translateY(50px); /* Смещено вниз */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Анимация появления */
+  }
+  
+  .section.visible {
+    opacity: 1; /* Показываем секцию */
+    transform: translateY(0); /* Возвращаем в исходное положение */
+  }
+  
+  .section.hidden {
+    opacity: 0; /* Скрываем секцию */
+    transform: translateY(50px); /* Держим смещение */
+  }
+  
+  /* Слайдер */
+  .slider-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Текстовая информация */
+  .text-container {
+    text-align: center;
+  }
+  
+  .text-container h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .text-container p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
