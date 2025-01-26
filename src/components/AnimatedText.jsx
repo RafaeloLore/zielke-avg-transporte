@@ -1,37 +1,39 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './AnimatedText.css';
+import '../styles/AnimatedText.css';
 
-function AnimatedText() {
+function AnimatedText({ title, paragraph }) {
+  const containerRef = useRef();
   const [isVisible, setIsVisible] = useState(false);
-  const textRef = useRef();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true); // Текст видим, запускаем анимацию
+          setIsVisible(true); // Запускаем анимацию, когда элемент становится видимым
         }
       },
-      { threshold: 0.5 } // Элемент считается видимым, если 50% его площади видны
+      { threshold: 0.5 } // 50% видимости элемента
     );
 
-    if (textRef.current) {
-      observer.observe(textRef.current);
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
     }
 
     return () => {
-      if (textRef.current) {
-        observer.unobserve(textRef.current);
+      if (containerRef.current) {
+        observer.unobserve(containerRef.current);
       }
     };
   }, []);
 
   return (
-    <div
-      ref={textRef}
-      className={`animated-text ${isVisible ? 'visible' : ''}`}
-    >
-      Добро пожаловать на наш сайт!
+    <div ref={containerRef} className="animated-container">
+      <h1 className={`animated-title ${isVisible ? 'visible' : ''}`}>
+        {title}
+      </h1>
+      <p className={`animated-paragraph ${isVisible ? 'visible' : ''}`}>
+        {paragraph}
+      </p>
     </div>
   );
 }

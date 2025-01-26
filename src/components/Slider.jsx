@@ -1,28 +1,34 @@
-import React, { useEffect, useState } from 'react';
-import '../styles/Slider.css'; // Подключаем стили
+import React, { useState, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import '../styles/Slider.css';
 
-
-function Slider({ images = [] }) { // Задаём значение по умолчанию
+function Slider({ images = [] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Используем хук useInView для отслеживания видимости слайдера
+  const { ref, inView } = useInView({
+    threshold: 0.5, // 50% элемента должны быть видимы
+    triggerOnce: true, // Анимация запускается только один раз
+  });
+
   useEffect(() => {
-    if (!images.length) return; // Если массив пустой, не запускаем слайдер
+    if (!inView) return; // Если слайдер не в зоне видимости, не переключаем слайды
 
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000);
+    }, 3000); // Интервал в 3 секунды
 
-    return () => clearInterval(interval);
-  }, [images]);
+    return () => clearInterval(interval); // Очищаем интервал при размонтировании
+  }, [images, inView]);
 
   if (!images.length) {
     return <div className="slider">Нет изображений для отображения</div>;
   }
 
   return (
-    <div className="slider">
+    <div ref={ref} className={`slider ${inView ? 'visible' : ''}`}>
       {images.map((image, index) => (
         <img
           key={index}

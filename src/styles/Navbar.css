@@ -7,14 +7,13 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    position: fixed; /* Фиксируем навбар на экране */
     z-index: 1000; /* Высокий приоритет отображения */
 
     flex-direction: row;
     align-items: center;
     background-color: #ffffff; /* Цвет фона */
     padding: 0px 0;
-    width: 70%; /* Заполняет всю ширину */
+    width: 100%; /* Заполняет всю ширину */
 
   }
   

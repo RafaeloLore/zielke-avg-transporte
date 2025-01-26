@@ -1,11 +1,29 @@
-.animated-text {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
-  }
-  
-  .animated-text.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
+/* Контейнер */
+.animated-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Анимация для заголовка (h1) */
+.animated-title {
+  opacity: 0;
+  transform: translateY(-20px); /* Смещение вверх */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Плавная анимация */
+}
+
+.animated-title.visible {
+  opacity: 1;
+  transform: translateY(0); /* Возвращаемся в исходное положение */
+}
+
+/* Анимация для абзаца (p) */
+.animated-paragraph {
+  opacity: 0;
+  transform: translateY(20px); /* Смещение вниз */
+  transition: opacity 1s ease-out 0.5s, transform 1s ease-out 0.5s; /* Пауза перед анимацией */
+}
+
+.animated-paragraph.visible {
+  opacity: 1;
+  transform: translateY(0); /* Возвращаемся в исходное положение */
+}

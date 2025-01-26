@@ -3,7 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar'; // Импортируем Navbar
-import './index.css'; // Импортируем глобальные стили
+import './styles/index.css'; // Импортируем глобальные стили
 import './app.css'; // Импортируем глобальные стили
 import './styles/home.css'; // Импортируем глобальные стили
 import './styles/Slider.css'; // Импортируем глобальные стили
