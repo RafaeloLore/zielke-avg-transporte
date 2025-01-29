@@ -1,0 +1,68 @@
+/* Основные стили страницы */
+.jobs-page {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #002FCC;
+  }
+  
+  /* Заголовок */
+  .jobs-header {
+    margin-bottom: 30px;
+  }
+  
+  .jobs-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .jobs-header p {
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  /* Блок вакансий */
+  .job-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Карточка вакансии */
+  .job-card {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .job-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  .job-card p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #444;
+  }
+  
+  /* Кнопка отклика */
+  .apply-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+  
+  .apply-btn:hover {
+    background-color: #002FCC;
+  }
+  

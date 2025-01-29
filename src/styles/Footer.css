@@ -1,0 +1,73 @@
+/* Основные стили футера */
+.footer {
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+    padding-top:  20px ;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Блок информации */
+  .footer-info, .footer-links, .footer-social {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+  }
+  
+  .footer-info h3, .footer-links h3, .footer-social h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-info p, .footer-links ul, .footer-social a {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links ul li a:hover {
+    color: white;
+  }
+  
+  /* Соцсети */
+  .footer-social a {
+    text-decoration: none;
+    margin: 0 5px;
+    color: #ccc;
+    transition: color 0.3s;
+  }
+  
+  .footer-social a:hover {
+    color: white;
+  }
+  
+  /* Нижний футер */
+  .footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    font-size: 0.9rem;
+  }
+  

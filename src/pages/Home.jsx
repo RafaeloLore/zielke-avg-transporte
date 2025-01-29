@@ -34,7 +34,7 @@ function Home() {
                   'SCHÜTTGUTTRANSPORTE',
                   'BAGGERBETRIEB',
                   'TIEFLADERTRANSPORTE',
-                  'LKWMITLADEKRAN',
+                  'LKW MIT LADEKRAN',
                 ].map((section) => (
                   <li key={section} className="menu2-item">
                     <Link to={section} smooth={true} duration={500}>
@@ -79,7 +79,7 @@ function Home() {
           images: ['./D-1.jpg'],
         },
         {
-          id: 'LKWMITLADEKRAN',
+          id: 'LKW MIT LADEKRAN',
           title: 'LKW MIT LADEKRAN',
           paragraph:
             'Zu unserer Leistung gehört auch die Gestellung von LKW mit Ladekran, die bei einer Be- und Entladung keinen zusätzlichen Telekran benötigen.',
@@ -90,15 +90,7 @@ function Home() {
       ))}
 
       {/* Контактная информация */}
-      <div className="bad">
-        <div className="konntakt">
-          <h2>Zielke AVG Transporte</h2>
-          <p>Senefelderstraße 1K, 63110 Rodgau</p>
-          <p>Tel: +49 (0) 6106 7709228</p>
-          <p>Fax: +49 (0) 6106 6674339</p>
-          <p>info@zielke-avg-transporte.de</p>
-        </div>
-      </div>
+     
     </div>
   );
 }

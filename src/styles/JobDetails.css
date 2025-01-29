@@ -1,0 +1,52 @@
+/* Основной контейнер */
+.job-details {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #002FCC;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #ffffff;
+  }
+  
+  /* Заголовки */
+  .job-details h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .job-details h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #ffffff;
+  }
+  
+  /* Списки */
+  .job-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .job-details ul li {
+    font-size: 1.1rem;
+    margin: 5px 0;
+  }
+  
+  /* Кнопка отклика */
+  .job-details button {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 15px;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  .job-details button:hover {
+    background-color: #333;
+  }
+  
