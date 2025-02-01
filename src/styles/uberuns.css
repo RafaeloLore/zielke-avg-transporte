@@ -1,0 +1,15 @@
+p{
+    color: black;
+}
+section{
+    max-width: 1600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+.textuberuns{
+align-items: center;
+}

@@ -24,7 +24,7 @@ function Navbar() {
             <a href="/contact">KONTAKT</a>
           </li>
           <li className="menu-item">
-            <a href="/contact">UBER UNS</a>
+            <a href="/uberuns">UBER UNS</a>
           </li>
         </ul>
       </div>
