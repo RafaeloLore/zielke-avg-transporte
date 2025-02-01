@@ -30,9 +30,15 @@ function Contact() {
     emailjs.send(
       'service_0e1omid', // Service ID из EmailJS
       'template_slv3dxb', // Template ID из EmailJS
-      emailData,
+      {
+        from_name: data.name,        // Имя пользователя
+        from_email: data.email,      // Email пользователя
+        message: data.message,       // Сообщение пользователя
+        reply_to: data.email         // ⚡️ Позволяет ответить на email пользователя
+      },
       'IDxfo24Ry1NIB7uLa' // Public Key из EmailJS
     )
+    
     .then(
       () => {
         setMessage('Ваше сообщение успешно отправлено!');
@@ -63,7 +69,7 @@ function Contact() {
 
         {/* reCAPTCHA */}
         <ReCAPTCHA
-          sitekey="tifefQrGVfk2dg4jFTpdj" // Вставьте ваш Site Key
+          sitekey="6LdgHscqAAAAAKZNCIINSjBt_7_viG7qN1LSyySA" // Вставьте ваш Site Key
           onChange={handleCaptchaChange}
         />
 

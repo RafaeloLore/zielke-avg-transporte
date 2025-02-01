@@ -1,66 +1,53 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import ReCAPTCHA from 'react-google-recaptcha';
 
 function ContactForm() {
-  const { register, handleSubmit, reset, formState: { errors } } = useForm();
-  const [captchaToken, setCaptchaToken] = React.useState(null);
+  const { register, handleSubmit, reset } = useForm();
+  const [captchaToken, setCaptchaToken] = useState(null);
+  const [message, setMessage] = useState('');
 
   const onSubmit = async (data) => {
     if (!captchaToken) {
-      alert('Подтвердите, что вы не робот!');
+      setMessage('Ошибка: Подтвердите, что вы не робот.');
       return;
     }
 
     try {
-      await axios.post('http://localhost:5000/contact', { ...data, captchaToken });
-      alert('Сообщение отправлено!');
+      const response = await axios.post('http://localhost:5000/contact', {
+        ...data,
+        captchaToken, // 🔹 Отправляем капчу на сервер
+      });
+
+      setMessage(response.data.message);
       reset();
       setCaptchaToken(null);
     } catch (error) {
-      console.error(error);
-      alert('Ошибка при отправке сообщения!');
+      setMessage('Ошибка отправки. Попробуйте снова.');
+      console.error('Ошибка:', error);
     }
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} style={{ maxWidth: '400px', margin: '0 auto' }}>
-      <div>
-        <label>Name:</label>
-        <input
-          {...register('name', { required: 'Введите ваше имя' })}
-          type="text"
-          placeholder="Ваше имя"
-        />
-        {errors.name && <span>{errors.name.message}</span>}
-      </div>
-      <div>
-        <label>Email:</label>
-        <input
-          {...register('email', {
-            required: 'Введите ваш email',
-            pattern: { value: /^\S+@\S+$/, message: 'Некорректный email' }
-          })}
-          type="email"
-          placeholder="Ваш email"
-        />
-        {errors.email && <span>{errors.email.message}</span>}
-      </div>
-      <div>
-        <label>Сообщение:</label>
-        <textarea
-          {...register('message', { required: 'Введите ваше сообщение' })}
-          placeholder="Ваше сообщение"
-        ></textarea>
-        {errors.message && <span>{errors.message.message}</span>}
-      </div>
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <label>Имя:</label>
+      <input {...register('name', { required: 'Введите имя' })} type="text" placeholder="Ваше имя" />
+      
+      <label>Email:</label>
+      <input {...register('email', { required: 'Введите email' })} type="email" placeholder="Ваш email" />
+      
+      <label>Сообщение:</label>
+      <textarea {...register('message', { required: 'Введите сообщение' })} placeholder="Ваше сообщение"></textarea>
+      
       <ReCAPTCHA
-        sitekey="ВАШ_SITE_KEY"
+        sitekey="6LdgHscqAAAAAKZNCIINSjBt_7_viG7qN1LSyySA" // 🔹 Вставьте публичный ключ reCAPTCHA
         onChange={setCaptchaToken}
         onExpired={() => setCaptchaToken(null)}
       />
+      
       <button type="submit">Отправить</button>
+      {message && <p>{message}</p>}
     </form>
   );
 }
