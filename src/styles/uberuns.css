@@ -1,15 +1,127 @@
-p{
+.uberunstext{
     color: black;
 }
-section{
-    max-width: 1600px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
+
+
+.sectioncarC1{
+    display: flex;
+    position: relative; /* Устанавливаем родителю относительное позиционирование */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    text-align: center;
+    margin-bottom: 50px;
+    width: 1200px;
+     background-color: rgb(255, 255, 255);
+     z-index: 2;
+    padding: 20px;
+ }
+ h2{
+     padding: 30px;
+ }
+ .text-C1{
+     display: flex;
+     text-align: center;
+     color: black;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     max-width:650px ;
+
+     padding-right: 50px;
+     padding-left: 50px;
+     opacity: 0; /* Скрываем текст */
+     transform: translateY(20px); /* Смещаем текст вниз */
+     animation: fadeIn 1.5s ease-out forwards; /* Запускаем анимацию */
+   }
+   
+   @keyframes fadeIn {
+     0% {
+       opacity: 0;
+       transform: translateY(20px);
+     }
+     100% {
+       opacity: 1;
+       transform: translateY(0);
+     }
+   }
+ 
+ 
+ 
+ 
+ p{
+     font-size: 25px;
+ 
+    }
+ .item3{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+ }  
+ .item4{
+    display: flex;
+    flex-direction: column;
+    width: 1800px;
+
+ }
+ .carC1{
+    width: auto;
+    max-height: 450px;
+    display: block; /* Убираем пробелы под изображением */
+    object-fit: cover; /* Обрезка изображения для заполнения области */
+
 }
-.textuberuns{
-align-items: center;
-}
+ 
+ .text-overlay {
+     position: absolute; /* Абсолютное позиционирование для текста */
+     top: 90%; /* От центра экрана */
+     left: 0%; /* От центра экрана */
+     transform: translate(-50%, -50%); /* Центрируем текст */
+     color: white; /* Белый цвет текста */
+     text-align: center; /* Центрируем текст */
+     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Тень для читаемости */
+     padding: 5px; /* Отступы вокруг текста */
+     font-size: 20px; /* Размер шрифта */
+     font-weight: bold; /* Жирный шрифт */
+     background-color: rgba(0, 0, 0, 0.753);
+   }
+   .sectioncarC1 {
+     opacity: 0;
+     transform: translateY(50px);
+     transition: opacity 1s ease-out, transform 1s ease-out;
+   }
+   
+   .sectioncarC1.visible {
+     opacity: 1;
+     transform: translateY(0);
+   }
+   /* Контейнер слайдера */
+.slider1 {
+    
+
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Максимальная ширина слайдера */
+    height: 250px; /* Высота слайдера */
+    margin: 0 auto; /* Центрируем слайдер */
+    overflow: hidden; /* Скрываем всё, что выходит за границы */
+    background-color: #000; /* Чёрный фон для загрузки */
+  }
+  
+  /* Слайды */
+  .slide1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Масштабируем изображение, чтобы оно покрывало весь слайд */
+    background-position: center; /* Центрируем изображение */
+    opacity: 0; /* Прячем все слайды */
+    transition: opacity 1s ease-in-out; /* Плавное появление */
+  }
+  
+  /* Активный слайд */
+  .slide1.active {
+    opacity: 1; /* Показываем активный слайд */
+    z-index: 1; /* Выводим его на передний план */
+  }
+  

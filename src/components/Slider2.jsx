@@ -17,15 +17,15 @@ function Slider({ images = [] }) {
   }, [images]);
 
   if (!images.length) {
-    return <div className="slider">Нет изображений для отображения</div>;
+    return <div className="slider1">Нет изображений для отображения</div>;
   }
 
   return (
-    <div className="slider">
+    <div className="slider1">
       {images.map((image, index) => (
         <div
           key={index}
-          className={`slide ${index === currentIndex ? 'active' : ''}`}
+          className={`slide1 ${index === currentIndex ? 'active' : ''}`}
           style={{
             backgroundImage: `url(${image})`, // Используем фоновые изображения
             opacity: index === currentIndex ? 1 : 0,
