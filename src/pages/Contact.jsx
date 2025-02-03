@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import axios from "axios";
@@ -87,7 +88,11 @@ function Contact() {
 
   return (
     <section className="Konntant_section">
-    <div className="contact-container">
+
+       <div className=" background-container  ">
+
+
+    <div className="contact-container , content">
       <h1>Kontaktieren Sie uns</h1>
       <p>Füllen Sie das Formular aus und wir werden Sie so schnell wie möglich kontaktieren.</p>
 
@@ -107,10 +112,13 @@ function Contact() {
           onChange={handleCaptchaChange}
         />
 
-        <button type="submit">Schicken</button>
+        <button type="submit">Senden</button>
         {message && <p className="form-message">{message}</p>}
       </form>
-    </div>
+      </div>
+      </div>
+
+    
     </section>
   );
 }

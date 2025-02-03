@@ -9,20 +9,22 @@ function Jobs() {
     navigate(`/apply/${jobId}`); // Переход на страницу отклика
   };
   return (
-    <div className="jobs-page">
+    <div className="background-container">
+
+    <div className="jobs-page , content">
       <header className="jobs-header">
-        <h1>Вакансии</h1>
-        <p>Присоединяйтесь к нашей команде и развивайтесь вместе с нами!</p>
+        <h1>Stellenangebote</h1>
+        <p>Werden Sie Teil unseres Teams und wachsen Sie mit uns!</p>
       </header>
 
       <section className="job-list">
         <div className="job-card">
           <h2>LKW-Kranfahrer</h2>
-          <p><strong>Местоположение:</strong> Германия, Франкфурт</p>
-          <p><strong>Зарплата:</strong> От 2500€ в месяц</p>
-          <p>Мы ищем опытных водителей грузовиков для перевозки грузов по Европе.</p>
+          <p><strong>Standort:</strong> Deutschland, Frankfurt</p>
+          <p><strong>Gehalt:</strong> Ab 2500€ pro Monat</p>
+          <p>Wir suchen erfahrene LKW-Fahrer für den Gütertransport in ganz Europa.</p>
           <button className="apply-btn" onClick={() => navigate('/jobs/lkw-kranfahrer')}>
-            Подробнее
+          Mehr lesen
           </button>
         </div>
 
@@ -30,15 +32,17 @@ function Jobs() {
 
         <div className="job-card">
           <h2>LKW-Fahrer</h2>
-          <p><strong>Местоположение:</strong> Германия, Мюнхен</p>
-          <p><strong>Зарплата:</strong> От 2800€ в месяц</p>
-          <p>Обслуживание и ремонт грузового транспорта.</p>
+          <p><strong>Standort:</strong> Deutschland, Frankfurt</p>
+          <p><strong>Gehalt:</strong> Ab 2500€ pro Monat</p>
+          <p>Wartung und Reparatur von Gütertransporten.</p>
           <button className="apply-btn" onClick={() => navigate('/jobs/lkw-fahrer')}>
-            Подробнее
+          Mehr lesen
           </button>
         </div>
       </section>
     </div>
+    </div>
+
   );
 }
 

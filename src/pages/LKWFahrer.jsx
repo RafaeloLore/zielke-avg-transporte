@@ -3,30 +3,35 @@ import '../styles/JobDetails.css'; // Подключаем стили
 
 function LKWFahrer() {
   return (
+    <div className="background-container">
     <div className="job-details">
-      <h1>Вакансия: Водитель грузовика (LKWFahrer)</h1>
-      <p><strong>Местоположение:</strong> Германия, Франкфурт</p>
-      <p><strong>Зарплата:</strong> От 2500€ в месяц</p>
-      <p>Мы ищем опытных водителей грузовиков для перевозки грузов по Европе.</p>
+      <h1>Stellenangebot: LKW-Fahrer/in</h1>
+      <p><strong>Standort:</strong> Deutschland, Frankfurt</p>
+      <p><strong>Gehalt:</strong> Ab 2500€ pro Monat</p>
+      <p>Wir suchen erfahrene LKW-Fahrer für den Gütertransport in ganz Europa.</p>
       
-      <h2>Требования:</h2>
+      <h2>Anforderungen:</h2>
       <ul>
-        <li>Водительские права категории C/CE</li>
-        <li>Опыт работы на грузовиках от 2 лет</li>
-        <li>Знание немецкого или английского языка</li>
+        <li>Führerscheinklasse C/CE</li>
+        <li>Erfahrung im LKW-Fahren ab 2 Jahren</li>
+        <li>Deutsch- oder Englischkenntnisse</li>
       </ul>
 
-      <h2>Что мы предлагаем:</h2>
+      <h2>Was wir bieten:</h2>
       <ul>
-        <li>Стабильную работу в надежной компании</li>
-        <li>Официальное трудоустройство</li>
-        <li>Оплачиваемые командировки</li>
+        <li>Fester Arbeitsplatz in einem zuverlässigen Unternehmen</li>
+        <li>Offizielle Beschäftigung</li>
+        <li>Bezahlte Geschäftsreisen</li>
       </ul>
 
       <button onClick={() => window.location.href = "mailto:hr@yourcompany.com?subject=Отклик на вакансию LKWFahrer"}>
-        Откликнуться
+      Antwort
       </button>
+      
     </div>
+    </div>
+
+    
   );
 }
 

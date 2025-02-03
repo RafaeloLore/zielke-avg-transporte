@@ -1,7 +1,38 @@
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3); /* Затемнение */
+
+}
+
+.background-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/S-1.jpeg') center/cover no-repeat;
+  filter: blur(5px); /* Размытие */
+  z-index: -1; /* Убираем фон назад */
+
+}
+
+.content {
+  position: relative;
+ 
+  z-index: 1; /* Поверх размытого фона */
+}
+
+
+
 
 .Konntant_section{
-  background-color: #002FCC;
-  display: flex;
+
+  display: flex;  
+  justify-content: center;
 }
 
 
@@ -10,7 +41,7 @@
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
-    background: #fff;
+    background: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
