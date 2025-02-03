@@ -7,7 +7,9 @@ function Navbar() {
     <div className="navbar">
       {/* Логотип */}
       <div className="navbar-logo">
-        <img src="./logo.png" alt="Логотип" className="logo" />
+      <a href="/">
+        <img src="./logo.png" alt="Логотип" className="logo"  />
+        </a>
       </div>
       {/* Меню */}
       <div className="navbar-menu">

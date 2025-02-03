@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import Slider from '../components/Slider';
+import Stats from "../components/Stats"; // Импортируем секцию статистики
+
 import AnimatedText from '../components/AnimatedText.jsx';
 import { useInView } from 'react-intersection-observer';
 
@@ -18,14 +20,21 @@ function Home() {
           <source src="/Zielke AVG Transporte.mp4" type="video/mp4" />
           Ваш браузер не поддерживает видео.
         </video>
-
+        
         {/* Секция с меню 2 */}
         <div className="mainnav2">
           <div className="video-content">
-            <h1>Добро пожаловать!</h1>
-            <p>Это секция с видео на заднем фоне.</p>
-          </div>
+          <div className='stats_section'>
+    
 
+
+    {/* Статистика */}
+    <Stats  layout="row" />
+
+
+  </div>
+           
+          </div>
           <div className="navbar2">
             <div className="navbar-menu2">
               <ul className="menu2-list">
@@ -49,7 +58,9 @@ function Home() {
       </section>
 
       {/* Секции с контентом */}
+      
       {[
+        
         {
           id: 'CONTAINERTRANSPORTE',
           title: 'CONTAINERTRANSPORTE',

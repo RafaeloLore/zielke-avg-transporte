@@ -1,0 +1,70 @@
+/* Контейнер для всех стат */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Единый блок, содержащий все три статы */
+  .stats-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.514);
+    transition: all 0.3s ease;
+    width:60%; /* Можно регулировать */
+    min-width: 235px;
+    
+  }
+  
+  /* Отдельный блок внутри stats-box */
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  /* Число */
+  .stat-number {
+    font-size: 30px;
+    font-weight: bold;
+    color: #002FCC; /* Цвет можно менять */
+  }
+  
+  /* Заголовок */
+  .stat-title {
+    font-size: 1rem;
+    color: #080808;
+    margin-top: 5px;
+  }
+  
+  /* Версия в колонку */
+  .stats-container.column .stats-box {
+    height: 700px;
+    flex-direction: column;
+  }
+  
+  /* Версия в строку */
+  .stats-container.row .stats-box {
+    flex-direction: row;
+  }
+  
+  /* Эффект появления */
+  .stats-box {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

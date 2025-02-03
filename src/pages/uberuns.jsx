@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/uberuns.css'; // Подключаем стили
 import { Link } from 'react-scroll';
+import Stats from "../components/Stats"; // Импортируем секцию статистики
+
 import Slider1 from '../components/Slider2.jsx';
 import AnimatedText from '../components/AnimatedText.jsx';
 import { useInView } from 'react-intersection-observer';
@@ -12,6 +14,7 @@ function uberuns() {
 
   return (
     <section className='item3'>
+      
       <div className='item4'>
       {/* Секция с видео */}
       
@@ -46,6 +49,14 @@ function uberuns() {
 
       {/* Контактная информация */}
       </div>
+      <div className="stats-container column">    
+
+
+    {/* Статистика */}
+    <Stats  />
+
+
+  </div>
     </section>
   );
 }

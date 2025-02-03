@@ -45,14 +45,14 @@ function Contact() {
     console.log("📨 Данные формы перед отправкой:", data);
 
     if (!captchaValue) {
-      setMessage("❌ Пожалуйста, подтвердите, что вы не робот.");
+      setMessage("❌ Bitte bestätigen Sie, dass Sie kein Roboter sind.");
       return;
     }
 
     // 🔍 Проверяем email перед отправкой
     const isEmailValid = await verifyEmail(data.email);
     if (!isEmailValid) {
-      setMessage("❌ Указанный email недействителен или не существует.");
+      setMessage("❌ Die angegebene E-Mail ist ungültig oder existiert nicht..");
       return;
     }
 
@@ -74,30 +74,31 @@ function Contact() {
       )
       .then(
         () => {
-          setMessage("✅ Ваше сообщение успешно отправлено!");
+          setMessage("✅ Ihre Nachricht wurde erfolgreich gesendet.!");
           reset();
           setCaptchaValue(null);
         },
         (error) => {
-          setMessage("❌ Ошибка при отправке. Попробуйте снова.");
+          setMessage("❌ Fehler beim Senden. Versuchen Sie es erneut.");
           console.error("Ошибка EmailJS:", error);
         }
       );
   };
 
   return (
+    <section className="Konntant_section">
     <div className="contact-container">
-      <h1>Свяжитесь с нами</h1>
-      <p>Заполните форму, и мы свяжемся с вами как можно скорее.</p>
+      <h1>Kontaktieren Sie uns</h1>
+      <p>Füllen Sie das Formular aus und wir werden Sie so schnell wie möglich kontaktieren.</p>
 
       <form onSubmit={handleSubmit(onSubmit)} className="contact-form">
-        <label>Ваше имя:</label>
+        <label>Ihr Name:</label>
         <input type="text" {...register("name", { required: true })} required />
 
         <label>Email:</label>
         <input type="email" {...register("email", { required: true })} required />
 
-        <label>Сообщение:</label>
+        <label>Nachricht:</label>
         <textarea {...register("message", { required: true })} required></textarea>
 
         {/* reCAPTCHA */}
@@ -106,10 +107,11 @@ function Contact() {
           onChange={handleCaptchaChange}
         />
 
-        <button type="submit">Отправить</button>
+        <button type="submit">Schicken</button>
         {message && <p className="form-message">{message}</p>}
       </form>
     </div>
+    </section>
   );
 }
 
