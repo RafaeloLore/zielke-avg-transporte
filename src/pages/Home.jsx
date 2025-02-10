@@ -39,7 +39,9 @@ function Home() {
             <div className="navbar-menu2">
               <ul className="menu2-list">
                 {[
+                  
                   'CONTAINERTRANSPORTE',
+                  'CONTAINERSERVICE',
                   'SCHÜTTGUTTRANSPORTE',
                   'BAGGERBETRIEB',
                   'TIEFLADERTRANSPORTE',
@@ -66,6 +68,13 @@ function Home() {
           title: 'CONTAINERTRANSPORTE',
           paragraph:
             'Wenn Sie auf der Suche nach einem kompetenten Transportunternehmen für Container sind, dann sind Sie bei uns genau richtig! Wir sind mit unseren Containerchassis und langjähriger Erfahrung in der Branche bestens für einen Transport von 20-, 30-, 40- und 45-Fuß-Containern aufgestellt.',
+          images: ['./R-1.jpg', './R-2.jpg', './R-3.jpg', '/R-4.jpg'],
+        },
+        {
+          id: 'CONTAINERSERVICE',
+          title: 'CONTAINERSERVICE',
+          paragraph:
+            'Wir können Ihnen Absetzcontainer von 5 m³ bis 10 m³ zur Verfügung stellen. Darüber hinaus liefern wir Schüttgüter wie Schotter, Mutterboden, Sand, Kies für Ihre Baustelle. In unseren Absetzcontainern können Sie problemlos Bauschut, Erdaushub, Altholz, Baustellenmischabfälle, Gipsabfälle, Gartenabfälle, Asphalt und vieles mehr entsorgen. Die Stellung der Container erfolgt durch modernste Fahrzeuge unseres telematikgesteuerten Fuhrparks.',
           images: ['./R-1.jpg', './R-2.jpg', './R-3.jpg'],
         },
         {
@@ -73,7 +82,7 @@ function Home() {
           title: 'SCHÜTTGUTTRANSPORTE',
           paragraph:
             'Unser Fuhrpark umfasst verschiedene Auflieger Typen. Wir haben thermoisolierte Kippmulden aber auch gewöhnliche Kippmulden aus Stahl. Dadurch können wir alle Arten von Schüttgütern transportieren. Egal ob es Bauschutt, Beton, Sand, Kies, Schotter, Asphalt oder sogar belastetes Material ist, wir sind für alles ausgerüstet und zertifiziert. Zudem sind viele unserer Fahrzeug mit Allradantrieb ausgestattet, wodurch wir praktisch auf jedem Untergrund unsere Fahrzeuge einsetzten können. Die engsten Be- und Entladestellen stellen für uns auch kein Problem dar, da unser Fuhrpark nicht nur Sattelzüge sondern auch Dreiachser beinhaltet.',
-          images: ['./B-1.jpg', './B-2.jpg'],
+          images: ['./B-1.jpg', './B-2.jpg', ' ./B-3.jpg'],
         },
         {
           id: 'BAGGERBETRIEB',
@@ -87,7 +96,7 @@ function Home() {
           title: 'TIEFLADERTRANSPORTE',
           paragraph:
             'Haben sie sperrige Transportgüter, wie Baumaschinen, Betonteile oder Kranteile zu transportieren? Dann eignet sich unser Tieflader perfekt für Sie. Gerne können Sie auch unseren Tieflader für den Eigenbedarf mieten. Kontaktieren Sie uns doch bei Bedarf und wir unterbreiten Ihnen ein individuelles Angebot.',
-          images: ['./D-1.jpg'],
+          images: ['./D-1.jpg','./D-2.jpeg'],
         },
         {
           id: 'LKW MIT LADEKRAN',

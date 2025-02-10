@@ -27,3 +27,38 @@
   opacity: 1; /* Показываем активный слайд */
   z-index: 1; /* Выводим его на передний план */
 }
+@media (max-width: 1440px) {
+
+  
+
+
+}
+ @media (max-width: 1280px) {
+
+
+}
+@media (max-width: 1024px) {
+
+
+}
+@media (max-width: 800px) {
+  .slide{
+    display: none;
+  
+      }
+    .slider{
+      display: none;
+  
+    }
+
+}
+@media (max-width: 600px) {
+ 
+
+}
+@media (max-width: 480px) {
+  
+  
+  }
+
+

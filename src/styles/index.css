@@ -7,6 +7,7 @@
   
   html, body {
     height: 100%; /*  высоту страницы на 100% */
+    width:  100%; /*  высоту страницы на 100% */
     font-family: Arial, sans-serif; /* Базовый шрифт */
     color: #ffffff; /* Тёмный цвет текста */
     z-index: -2;

@@ -140,6 +140,6 @@ console.log("🔍 EMAIL_USER:", process.env.EMAIL_USER);
 console.log("🔍 ABSTRACT_API_KEY:", process.env.ABSTRACT_API_KEY);
 
 // 🔹 Запуск сервера
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Сервер запущен на http://localhost:${PORT}`);
 });

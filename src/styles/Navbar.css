@@ -1,70 +1,144 @@
 /* Общий контейнер навбара */
-.mainnav{
+.mainnav {
   display: flex;
   justify-content: center;
+}
+
+/* Основной Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 0;
+  width: 70%;
+  z-index: 1000;
+}
+
+/* Логотип */
+.navbar-logo {
+  padding-left: 20px;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Обычное меню */
+.navbar-menu {
+  display: flex;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-item {
+  margin: 0 20px;
+}
+
+.menu-item a {
+  font-size: 1rem;
+  text-decoration: none; /* Убираем подчеркивание */
+  color: #000000; /* Синий цвет текста */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Анимация смены цвета */
+  text-transform: uppercase;
+  transition: 700ms ease;
 
 }
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    z-index: 1000; /* Высокий приоритет отображения */
 
-    flex-direction: row;
-    align-items: center;
-    background-color: #ffffff; /* Цвет фона */
-    padding: 0px 0;
-    width: 100%; /* Заполняет всю ширину */
+.menu-item a:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+  color: #002FCC;
+}
 
-  }
-  
-  /* Логотип */
-  .navbar-logo {
+/* Бургер-меню (по умолчанию скрыто) */
+.burger-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1100;
+  color: black;
+}
 
-    padding: 10px 0px 0px 2%;
+/* Контейнер бургер-меню */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  transition: right 0.4s ease-in-out;
+}
+
+.burger-menu.open {
+  right: 0;
+}
+
+.burger-menu li {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.burger-menu a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.burger-menu a:hover {
+  color: #002FCC;
+}
+/* Анимация логотипа */
+@keyframes logoFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  .logo {
-    max-width: 150px; /* Ограничиваем ширину логотипа */
-    height: auto; /* Сохраняем пропорции */
-    
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  /* Меню */
+}
+
+
+
+
+
+
+/* Адаптивность: бургер включается с 1280px */
+@media (max-width: 1280px) {
   .navbar-menu {
-    display: flex;
-    align-items: center;
-    background-color: #ffffff; /* Белый фон меню */
+    display: none;
   }
-  
-  .menu-list {
-    
-    display: flex;
-    justify-content: center;
-    margin-right:2rem ;
-    padding: 0px 25px 0px 0px;
-    list-style: none; /* Убираем маркеры списка */
-  }
-  
-  .menu-item {
-    
-    margin: 0px 0px 0px 25px; /* Расстояние между пунктами меню */
-    
-  }
-  
-  .menu-item a {
-    font-size: 18px;
-    text-decoration: none; /* Убираем подчеркивание */
-    color: #000000; /* Синий цвет текста */
-    font-weight: bold;
-    transition: color 0.3s ease; /* Анимация смены цвета */
-    text-transform: uppercase;
-    transition: 700ms ease;
 
+  .burger-icon {
+    display: block;
   }
-  
-  .menu-item a:hover {
-    font-variation-settings: "wght" 582; 
-    letter-spacing: 1px;
-    color: #002FCC;
+
+  .burger-menu {
+    display: flex;
   }
-  
+  .navbar-logo {
+    padding-left: 0px;
+  }
+  .logo {
+    max-width: 100px;
+    height: auto;
+  }
+}
