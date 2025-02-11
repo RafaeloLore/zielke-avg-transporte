@@ -29,7 +29,7 @@ app.use(
           "https://www.google.com",
           "https://www.gstatic.com",
           "https://api.emailjs.com",
-          "https://emailvalidation.abstractapi.com", // ✅ Добавляем Abstract API для проверки email
+          "https://emailvalidation.abstractapi.com", // ✅ API для проверки email
         ],
         frameSrc: ["'self'", "https://www.google.com"],
       },
@@ -37,7 +37,12 @@ app.use(
   })
 );
 
-app.use(cors());
+// ⚡ Настройка CORS (убран `origin`, но можно добавить позже)
+app.use(cors({
+  credentials: true, // Разрешает куки, если нужно
+  // origin: "https://mywebsite.com", // 🔹 Раскомментировать, если фронт и бэк на разных серверах
+}));
+
 app.use(bodyParser.json());
 
 // 🔹 Функция проверки email через Abstract API
@@ -133,9 +138,6 @@ app.use(express.static(path.join(__dirname, '../dist')));
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
-
-// 🔹 Логирование важных переменных (удалите в продакшене!)
-
 
 // 🔹 Запуск сервера
 app.listen(PORT, '0.0.0.0', () => {
