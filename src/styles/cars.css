@@ -72,4 +72,48 @@ p{
     opacity: 1;
     transform: translateY(0);
   }
+  @media (max-width: 1440px) {
+
+
+  }
+   @media (max-width: 1280px) {
+  
+  
+  }
+  @media (max-width: 1024px) {
+  
+  
+  }
+  @media (max-width: 800px) {
+   
+  
+  }
+  @media (max-width: 600px) {
+   
+  
+  }
+  @media (max-width: 480px) {
+    
+    .text-R1{
+    
+      width:250px ;
+      padding-right: 5%;
+      padding-left: 5%;
+      opacity: 0; /* Скрываем текст */
+      transform: translateY(20px); /* Смещаем текст вниз */
+      animation: fadeIn 1.5s ease-out forwards; /* Запускаем анимацию */
+    }
+    p{
+      font-size: 15px;
+  
+  }
+  h1{
+    font-size: 20px;
+  }
+  .sectioncarR1{
+    justify-content: center;
+  }
+    }
+  
+  
   

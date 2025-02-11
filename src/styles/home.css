@@ -169,7 +169,46 @@ border-bottom: solid 2px black ;
   
   
   }
+  .navbar2 {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .menu2-list {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu2-item {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .menu2-item a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding: 15px;
+    border-bottom: 2px solid black;
+  }
+  .navbar-menu2 {
+    display: flex;
+    height: auto;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  .menu2-item a:hover {
+    color: #fff;
+    background-color: #002FCC;
+    font-variation-settings: "wght" 582; 
+    letter-spacing: 0px;
   
+  
+   }
   
 }
 @media (max-width: 800px) {
@@ -252,7 +291,7 @@ border-bottom: solid 2px black ;
 }
 @media (max-width: 480px) {
   .menu2-item a {
-    font-size: 8px;
+    font-size: 15px;
     text-decoration: none; /* Убираем подчеркивание */
     color: #000000; /* Синий цвет текста */
     font-weight: bold;

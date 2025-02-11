@@ -135,9 +135,7 @@ app.get('*', (req, res) => {
 });
 
 // 🔹 Логирование важных переменных (удалите в продакшене!)
-console.log("🔍 RECAPTCHA_SECRET_KEY:", process.env.RECAPTCHA_SECRET_KEY);
-console.log("🔍 EMAIL_USER:", process.env.EMAIL_USER);
-console.log("🔍 ABSTRACT_API_KEY:", process.env.ABSTRACT_API_KEY);
+
 
 // 🔹 Запуск сервера
 app.listen(PORT, '0.0.0.0', () => {

@@ -1,4 +1,4 @@
-.uberunstext{
+ .uberunstext{
     color: black;
 }
 
@@ -59,7 +59,6 @@
  .item4{
     display: flex;
     flex-direction: column;
-    width: 1800px;
 
  }
  .carC1{
@@ -124,4 +123,57 @@
     opacity: 1; /* Показываем активный слайд */
     z-index: 1; /* Выводим его на передний план */
   }
+  @media (max-width: 1440px) {
+    .item3{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      margin-top: 50px;
+  
+   }  
+   .item4{
+      display: flex;
+      flex-direction: column;
+  
+   }
+
+  }
+   @media (max-width: 1280px) {
+    
+  
+  }
+  @media (max-width: 1024px) {
+  
+  
+  }
+  @media (max-width: 800px) {
+    .slider1 {
+      display: none;
+    }
+    .slide1 {
+      display: none;
+    }
+    .sectioncarC1{
+      justify-content: center;
+      width: auto;
+    }
+    .text-C1{
+      width:350px ;
+
+      padding-right: 5%;
+      padding-left: 5%;
+    }
+   
+  }
+  @media (max-width: 600px) {
+   
+  
+  }
+  @media (max-width: 480px) {
+    
+    
+    }
+  
   

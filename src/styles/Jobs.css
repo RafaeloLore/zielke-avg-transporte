@@ -1,5 +1,5 @@
 /* Основные стили страницы */
-.background-container {
+.background-container2 {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -7,15 +7,18 @@
   background: rgba(0, 0, 0, 0.3); /* Затемнение */
 
 }
+.mini-conText{
+ height: 200px;
+}
 
-.background-container::before {
+.background-container2::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('/R-1.jpg') center/cover no-repeat;
+  background: url('/backforjobs.jpg') center/cover no-repeat;
   filter: blur(5px); /* Размытие */
   z-index: -1; /* Убираем фон назад */
 
@@ -82,6 +85,7 @@
     margin-top: 10px;
     transition: 700ms ease;
     border-radius: 25px;
+    
 
   }
   
@@ -90,4 +94,49 @@
   letter-spacing: 1px;
     background-color: #002FCC;
   }
+  @media (max-width: 1440px) {
+
+
+  }
+   @media (max-width: 1280px) {
+  
+  
+  }
+  @media (max-width: 1024px) {
+  
+  
+  }
+  @media (max-width: 800px) {
+   
+  
+  }
+  @media (max-width: 600px) {
+    .jobs-header h1 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    
+    .jobs-header p {
+      font-size: 1rem;
+      color: #ffffff;
+    }
+    .job-card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #000;
+    }
+    
+    .job-card p {
+      font-size: 1rem;
+      margin: 5px 0;
+      color: #444;
+    }
+  
+  }
+  @media (max-width: 480px) {
+    
+    
+    }
+  
+  
   

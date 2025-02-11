@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Stats.css"; // Подключаем CSS
 
+
 const Stats = () => {
   const stats = [
     { title: "Zufriedene Kunden", start: 2456, end: 2557, duration: 2000 },
@@ -9,6 +10,7 @@ const Stats = () => {
   ];
 
   const [values, setValues] = useState(stats.map((stat) => stat.start));
+  
 
   useEffect(() => {
     const timers = stats.map((stat, index) => {
@@ -30,6 +32,7 @@ const Stats = () => {
 
       return interval;
     });
+    
 
     return () => timers.forEach((timer) => clearInterval(timer));
   }, []);

@@ -1,7 +1,6 @@
 .background-container {
   position: relative;
   width: 100%;
-  height: 100vh;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.3); /* Затемнение */
 
@@ -27,7 +26,10 @@
 }
 
 
-
+.Konntant{
+  display: flex;
+  justify-content: center;
+}
 
 .Konntant_section{
 
@@ -39,13 +41,14 @@
 
 .contact-container {
     max-width: 600px;
-    margin: 40px auto;
     padding: 20px;
     background: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
     color: #080808;
+    margin: 40px;
+
 
   }
   
@@ -93,6 +96,7 @@
     cursor: pointer;
     font-size: 1rem;
     margin-top: 15px;
+    margin-bottom: 15px;
     transition: 700ms ease;
     border-radius: 5px;
   }
@@ -110,4 +114,41 @@
     font-size: 1rem;
     color: green;
   }
+  @media (max-width: 1440px) {
+
+
+  }
+   @media (max-width: 1280px) {
+  
+  
+  }
+  @media (max-width: 1024px) {
+  
+  
+  }
+  @media (max-width: 800px) {
+   
+    .contact-container h1 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #000;
+    }
+    
+    .contact-container p {
+      font-size: 1rem;
+      color: #000000;
+    }
+    
+    
+  }
+  @media (max-width: 600px) {
+   
+  
+  }
+  @media (max-width: 480px) {
+    
+    
+    }
+  
+  
   

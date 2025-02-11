@@ -90,7 +90,7 @@ function Contact() {
     <section className="Konntant_section">
 
        <div className=" background-container  ">
-
+<div className="Konntant">
 
     <div className="contact-container , content">
       <h1>Kontaktieren Sie uns</h1>
@@ -114,8 +114,20 @@ function Contact() {
 
         <button type="submit">Senden</button>
         {message && <p className="form-message">{message}</p>}
+        <div style={{ width: "100%", height: "400px" }}>
+      <iframe
+        title="Google Map"
+        width="100%"
+        height="400"
+        frameBorder="0"
+        style={{ border: 0 }}
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.5010934149623!2d8.864899712556987!3d49.98875997138891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd6b4001fcfce7%3A0x60460ea9e22694d9!2sZielke%20AVG%20Transporte%20%26%20Baggerbetrieb!5e1!3m2!1sde!2sde!4v1739194518758!5m2!1sde!2sde"        allowFullScreen
+      ></iframe>
+    </div>
       </form>
       </div>
+      </div>
+      
       </div>
 
     

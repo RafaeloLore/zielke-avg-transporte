@@ -67,4 +67,27 @@
       transform: translateY(0);
     }
   }
+  @media (max-width: 1440px) {
+
+    .stats-container.column .stats-box {
+      flex-direction: row;
+      height:10%;
+      width:100%; /* Можно регулировать */
+      max-width:435px;
+
+    }
+    
+  
+  }
+
+@media (max-width: 480px) {
+  
+  .stat-number {
+font-size: 20px;
+
+  }
+  .stat-title{
+    font-size: 12px;
+  }
+ }
   

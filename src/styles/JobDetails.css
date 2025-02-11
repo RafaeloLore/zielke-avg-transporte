@@ -59,4 +59,43 @@
     letter-spacing: 2px;
 
   }
+  @media (max-width: 1440px) {
+
+
+  }
+   @media (max-width: 1280px) {
+  
+  
+  }
+  @media (max-width: 1024px) {
+  
+  
+  }
+  @media (max-width: 800px) {
+   
+  
+  }
+  @media (max-width: 600px) {
+    .job-details h1 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    
+    .job-details h2 {
+      font-size: 0.9rem;
+      margin-top: 20px;
+      color: #000000;
+    }
+    .job-details ul li {
+      font-size: 0.8rem;
+      margin: 5px 0;
+    }
+  
+  }
+  @media (max-width: 480px) {
+    
+    
+    }
+  
+  
   

@@ -29,7 +29,8 @@ function Home() {
 
 
     {/* Статистика */}
-    <Stats  layout="row" />
+    <Stats   />
+   
 
 
   </div>
@@ -60,6 +61,7 @@ function Home() {
       </section>
 
       {/* Секции с контентом */}
+      
       
       {[
         

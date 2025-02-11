@@ -9,7 +9,7 @@ function Jobs() {
     navigate(`/apply/${jobId}`); // Переход на страницу отклика
   };
   return (
-    <div className="background-container">
+    <div className="background-container2">
 
     <div className="jobs-page , content">
       <header className="jobs-header">
@@ -19,10 +19,11 @@ function Jobs() {
 
       <section className="job-list">
         <div className="job-card">
+          <div className='mini-conText'>
           <h2>LKW-Kranfahrer</h2>
-          <p><strong>Standort:</strong> Deutschland, Frankfurt</p>
-          <p><strong>Gehalt:</strong> Ab 2500€ pro Monat</p>
+          <p><strong>Führerscheinklasse:</strong> C/CE</p>
           <p>Wir suchen erfahrene LKW-Fahrer für den Gütertransport in ganz Europa.</p>
+          </div>
           <button className="apply-btn" onClick={() => navigate('/jobs/lkw-kranfahrer')}>
           Mehr lesen
           </button>
@@ -31,10 +32,14 @@ function Jobs() {
         
 
         <div className="job-card">
+        <div className='mini-conText'>
+
           <h2>LKW-Fahrer</h2>
-          <p><strong>Standort:</strong> Deutschland, Frankfurt</p>
-          <p><strong>Gehalt:</strong> Ab 2500€ pro Monat</p>
+          <p><strong>Führerscheinklasse:</strong> C/CE</p>
+
           <p>Wartung und Reparatur von Gütertransporten.</p>
+          </div>
+
           <button className="apply-btn" onClick={() => navigate('/jobs/lkw-fahrer')}>
           Mehr lesen
           </button>

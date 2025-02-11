@@ -19,7 +19,8 @@ function Footer() {
             <li><a href="/jobs">Stellenangebote</a></li>
             <li><a href="/contact">Kontakte</a></li>
             <li><a href="/uberuns">Über uns</a></li>
-            <li><a href="/privacy">Datenschutzrichtlinie</a></li>
+            <li><a href="/Datenschutz">Datenschutzrichtlinie</a></li>
+            <li><a href="/Impressum">Impressum</a></li>
           </ul>
         </div>
 
