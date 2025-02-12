@@ -24,7 +24,7 @@ function LKWFahrer() {
         <li>Bezahlte Geschäftsreisen</li>
       </ul>
 
-      <button onClick={() => window.location.href = "mailto:hr@yourcompany.com?subject=Отклик на вакансию LKWFahrer"}>
+      <button onClick={() => window.location.href = "mailto:info@zielke-avg-transporte.de?subject=Отклик на вакансию LKWFahrer"}>
       Antwort
       </button>
       

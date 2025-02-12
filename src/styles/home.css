@@ -122,6 +122,24 @@ border-bottom: solid 2px black ;
 
 
  }
+ @media (max-width: 1640px) {
+  .menu2-item a {
+    font-size: 16px;
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #000000; /* Синий цвет текста */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Анимация смены цвета */
+    cursor: pointer;
+  padding: 25px ;
+  transition: 700ms ease;
+  border-bottom: solid 2px black ;
+  
+  
+  }
+
+
+}
+ 
  @media (max-width: 1440px) {
   .menu2-item a {
     font-size: 12px;
@@ -141,7 +159,7 @@ border-bottom: solid 2px black ;
 }
  @media (max-width: 1280px) {
   .menu2-item a {
-    font-size: 12px;
+    font-size: 11px;
     text-decoration: none; /* Убираем подчеркивание */
     color: #000000; /* Синий цвет текста */
     font-weight: bold;
@@ -157,7 +175,7 @@ border-bottom: solid 2px black ;
  }
 @media (max-width: 1024px) {
   .menu2-item a {
-    font-size: 12px;
+    font-size: 11px;
     text-decoration: none; /* Убираем подчеркивание */
     color: #000000; /* Синий цвет текста */
     font-weight: bold;

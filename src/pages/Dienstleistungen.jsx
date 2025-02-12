@@ -29,6 +29,7 @@ function Dienstleistungen() {
                   <ul className="menu2-list">
                     {[
                       'CONTAINERTRANSPORTE',
+                      'CONTAINERSERVICE',
                       'SCHÜTTGUTTRANSPORTE',
                       'BAGGERBETRIEB',
                       'TIEFLADERTRANSPORTE',
@@ -54,6 +55,13 @@ function Dienstleistungen() {
               paragraph:
                 'Wenn Sie auf der Suche nach einem kompetenten Transportunternehmen für Container sind, dann sind Sie bei uns genau richtig! Wir sind mit unseren Containerchassis und langjähriger Erfahrung in der Branche bestens für einen Transport von 20-, 30-, 40- und 45-Fuß-Containern aufgestellt.',
               images: ['./R-1.jpg', './R-2.jpg', './R-3.jpg'],
+            },
+            {
+              id: 'CONTAINERSERVICE',
+              title: 'CONTAINERSERVICE',
+              paragraph:
+                'Wir können Ihnen Absetzcontainer von 5 m³ bis 10 m³ zur Verfügung stellen. Darüber hinaus liefern wir Schüttgüter wie Schotter, Mutterboden, Sand, Kies für Ihre Baustelle. In unseren Absetzcontainern können Sie problemlos Bauschut, Erdaushub, Altholz, Baustellenmischabfälle, Gipsabfälle, Gartenabfälle, Asphalt und vieles mehr entsorgen. Die Stellung der Container erfolgt durch modernste Fahrzeuge unseres telematikgesteuerten Fuhrparks.',
+              images: ['./F-1.jpg', './F-2.jpg', './F-3.jpg'],
             },
             {
               id: 'SCHÜTTGUTTRANSPORTE',

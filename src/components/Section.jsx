@@ -22,6 +22,7 @@ function Section({ id, title, paragraph, images }) {
       <div className="text-container">
         <h2>{title}</h2>
         <p>{paragraph}</p>
+      
       </div>
     </div>
   );

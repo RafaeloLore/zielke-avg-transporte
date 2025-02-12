@@ -26,8 +26,8 @@ function Footer() {
 
         <div className="footer-social">
           <h3>Wir sind in sozialen Netzwerken</h3>
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> |
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"> Instagram</a>
+          <a href="https://www.facebook.com/ZielkeAVG/" target="_blank" rel="noopener noreferrer">Facebook</a> |
+          <a href="https://www.instagram.com/zielkeavg/" target="_blank" rel="noopener noreferrer"> Instagram</a>
         </div>
       </div>
 

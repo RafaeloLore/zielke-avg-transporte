@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Stats.css"; // Подключаем CSS
 
-
 const Stats = () => {
   const stats = [
-    { title: "Zufriedene Kunden", start: 2456, end: 2557, duration: 2000 },
-    { title: "Abgeschlossene Bestellungen", start: 2200, end: 2768, duration: 3000 },
-    { title: "Jahrelange Erfahrung", start: 7, end: 20 , duration: 2000 },
+    { title: "Zufriedene Kunden", start: 9456, end: 12557, duration: 2000 },
+    { title: "Recyclingquote von Schrott und Baustoffen", start: 46, end: 97, duration: 1000, isPercentage: true },
+    { title: "Jahrelange Erfahrung", start: 7, end: 20, duration: 3000 },
   ];
 
   const [values, setValues] = useState(stats.map((stat) => stat.start));
-  
 
   useEffect(() => {
     const timers = stats.map((stat, index) => {
@@ -32,7 +30,6 @@ const Stats = () => {
 
       return interval;
     });
-    
 
     return () => timers.forEach((timer) => clearInterval(timer));
   }, []);
@@ -42,7 +39,10 @@ const Stats = () => {
       <div className="stats-box">
         {stats.map((stat, index) => (
           <div key={index} className="stat-item">
-            <span className="stat-number">{values[index]}</span>
+            <span className="stat-number">
+              {values[index]}
+              {stat.isPercentage ? "%" : ""}
+            </span>
             <span className="stat-title">{stat.title}</span>
           </div>
         ))}

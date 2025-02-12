@@ -28,7 +28,6 @@ function Navbar() {
         ) : (
           <div className="navbar-menu">
             <ul className="menu-list">
-              <li className="menu-item"><a href="/">HOME</a></li>
               <li className="menu-item"><a href="/Dienstleistungen">DIENSTLEISTUNGEN</a></li>
               <li className="menu-item"><a href="/jobs">JOBS</a></li>
               <li className="menu-item"><a href="/contact">KONTAKT</a></li>

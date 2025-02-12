@@ -41,12 +41,12 @@ function Home() {
               <ul className="menu2-list">
                 {[
                   
-                  'CONTAINERTRANSPORTE',
-                  'CONTAINERSERVICE',
-                  'SCHÜTTGUTTRANSPORTE',
-                  'BAGGERBETRIEB',
-                  'TIEFLADERTRANSPORTE',
-                  'LKW MIT LADEKRAN',
+                  'Unsere Dienstleistungen',
+                  'Unsere Mission',
+                  'Jobs',
+                  'Material',
+                  'Kontakte',
+                  
                 ].map((section) => (
                   <li key={section} className="menu2-item">
                     <Link to={section} smooth={true} duration={500}>
@@ -65,47 +65,47 @@ function Home() {
       
       {[
         
+        
         {
-          id: 'CONTAINERTRANSPORTE',
-          title: 'CONTAINERTRANSPORTE',
+          id: 'Unsere Dienstleistungen',
+          title: 'Unsere Dienstleistungen',
           paragraph:
-            'Wenn Sie auf der Suche nach einem kompetenten Transportunternehmen für Container sind, dann sind Sie bei uns genau richtig! Wir sind mit unseren Containerchassis und langjähriger Erfahrung in der Branche bestens für einen Transport von 20-, 30-, 40- und 45-Fuß-Containern aufgestellt.',
-          images: ['./R-1.jpg', './R-2.jpg', './R-3.jpg', '/R-4.jpg'],
+            'Wir bieten eine Vielzahl von Transportdienstleistungen, darunter: Containertransporte Bagerbetrib Frachttransporte Transport von Baumaschinen und vieles mehr!',
+          images: [ './4.jpg'],
         },
         {
-          id: 'CONTAINERSERVICE',
-          title: 'CONTAINERSERVICE',
+          id: 'Unsere Mission',
+          title: 'Unsere Mission',
           paragraph:
-            'Wir können Ihnen Absetzcontainer von 5 m³ bis 10 m³ zur Verfügung stellen. Darüber hinaus liefern wir Schüttgüter wie Schotter, Mutterboden, Sand, Kies für Ihre Baustelle. In unseren Absetzcontainern können Sie problemlos Bauschut, Erdaushub, Altholz, Baustellenmischabfälle, Gipsabfälle, Gartenabfälle, Asphalt und vieles mehr entsorgen. Die Stellung der Container erfolgt durch modernste Fahrzeuge unseres telematikgesteuerten Fuhrparks.',
-          images: ['./R-1.jpg', './R-2.jpg', './R-3.jpg'],
+            'Wir streben nach höchster Qualität und arbeiten täglich daran, dieses Ziel zu erreichen.Unsere Werte- Qualität und Zuverlässigkeit – Wir garantieren hohe Standards in allem, was wir tun.- Teamarbeit und Respekt – Gemeinsam erreichen wir mehr.- Innovation und Entwicklung – Wir fördern Kreativität und persönliches Wachstum.',
+          images: [ './2.jpg', ],
         },
         {
-          id: 'SCHÜTTGUTTRANSPORTE',
-          title: 'SCHÜTTGUTTRANSPORTE',
+          id: 'Jobs',
+          title: 'Jobs',
           paragraph:
-            'Unser Fuhrpark umfasst verschiedene Auflieger Typen. Wir haben thermoisolierte Kippmulden aber auch gewöhnliche Kippmulden aus Stahl. Dadurch können wir alle Arten von Schüttgütern transportieren. Egal ob es Bauschutt, Beton, Sand, Kies, Schotter, Asphalt oder sogar belastetes Material ist, wir sind für alles ausgerüstet und zertifiziert. Zudem sind viele unserer Fahrzeug mit Allradantrieb ausgestattet, wodurch wir praktisch auf jedem Untergrund unsere Fahrzeuge einsetzten können. Die engsten Be- und Entladestellen stellen für uns auch kein Problem dar, da unser Fuhrpark nicht nur Sattelzüge sondern auch Dreiachser beinhaltet.',
-          images: ['./B-1.jpg', './B-2.jpg', ' ./B-3.jpg'],
+            'Werden Sie Teil unseres Teams!Starten Sie Ihre Karriere in einem Unternehmen, das Talent schätzt und Wachstum fördert.Das bieten wir IhnenAttraktives Gehalt und BoniWeiterbildungs- und AufstiegsmöglichkeitenEin motiviertes Team und angenehmes ArbeitsklimaBewerbungSo einfach bewerben Sie sich bei uns:Klicken Sie auf "Bewerben" und senden Sie uns Ihr Profil.',
+          images: [ './5.jpg'],
         },
         {
-          id: 'BAGGERBETRIEB',
-          title: 'BAGGERBETRIEB',
+          id: 'Material',
+          title: 'Material',
           paragraph:
-            'Ab sofort führen wir alle Arbeiten aus, die im Zusammenhang mit dem Hausbau, Umbau und Anbauten als Erdarbeiten anfallen. Auch der Abbruch bestehender Gebäude wird gerne übernommen.',
-          images: ['./C-1.png', './C-2.jpg', './C-3.jpg'],
+            'Wenn Sie nicht die passende Dienstleistung finden, die Sie benötigen, schreiben Sie uns einfach oder rufen Sie uns an. Wir informieren Sie gerne individuell und finden die beste Lösung für Sie.',
+            
+         
+          
+            images: ['./material.JPG',],
         },
         {
-          id: 'TIEFLADERTRANSPORTE',
-          title: 'TIEFLADERTRANSPORTE',
+          id: 'Kontakte',
+          title: 'Kontakte',
           paragraph:
-            'Haben sie sperrige Transportgüter, wie Baumaschinen, Betonteile oder Kranteile zu transportieren? Dann eignet sich unser Tieflader perfekt für Sie. Gerne können Sie auch unseren Tieflader für den Eigenbedarf mieten. Kontaktieren Sie uns doch bei Bedarf und wir unterbreiten Ihnen ein individuelles Angebot.',
-          images: ['./D-1.jpg','./D-2.jpeg'],
-        },
-        {
-          id: 'LKW MIT LADEKRAN',
-          title: 'LKW MIT LADEKRAN',
-          paragraph:
-            'Zu unserer Leistung gehört auch die Gestellung von LKW mit Ladekran, die bei einer Be- und Entladung keinen zusätzlichen Telekran benötigen.',
-          images: ['./E-1.jpg', './E-2.jpg', './E-3.jpg'],
+            'Wenn Sie nicht die passende Dienstleistung finden, die Sie benötigen, schreiben Sie uns einfach oder rufen Sie uns an. Wir informieren Sie gerne individuell und finden die beste Lösung für Sie.',
+            
+         
+          
+            images: ['./6.jpg',],
         },
       ].map((section) => (
         <AnimatedSection key={section.id} {...section} options={animationOptions} />
