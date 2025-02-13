@@ -59,6 +59,8 @@ function Home() {
             'Wir bieten eine Vielzahl von Transportdienstleistungen, darunter:<br>- Containertransporte<br>- Baggerbetrieb<br>- Frachttransporte<br>- Transport von Baumaschinen und vieles mehr!',
           images: ['./4.jpg'],
           reverse: false,
+          buttonLink: '/Dienstleistungen',
+          buttonText: 'Dienstleistungen',
         },
         {
           id: 'Unsere Mission',
@@ -71,6 +73,8 @@ function Home() {
             + '- Innovation und Entwicklung – Wir fördern Kreativität und persönliches Wachstum.',
           images: ['./2.jpg'],
           reverse: true,
+          buttonLink: '/Uberuns',
+          buttonText: 'Über uns',
         },
         {
           id: 'Jobs',
@@ -87,6 +91,8 @@ function Home() {
           reverse: false,
           buttonLink: '/Uberuns',
           buttonText: 'Mehr Infos',
+          buttonLink: '/jobs',
+          buttonText: 'Stellenangebote',
         },
         {
           id: 'Material',
@@ -95,6 +101,8 @@ function Home() {
             'Wenn Sie nicht die passende Dienstleistung finden, die Sie benötigen, schreiben Sie uns einfach oder rufen Sie uns an. Wir informieren Sie gerne individuell und finden die beste Lösung für Sie.',
           images: ['./material.JPG'],
           reverse: true,
+          buttonLink: '/contact',
+          buttonText: 'Kontakte',
         },
         {
           id: 'Kontakte',
@@ -103,6 +111,8 @@ function Home() {
             'Kontaktieren Sie uns! Unser Team hilft Ihnen gerne weiter.',
           images: ['./6.jpg'],
           reverse: false,
+          buttonLink: '/contact',
+          buttonText: 'Kontakte',
         },
       ].map((section) => (
         <AnimatedSection key={section.id} {...section} options={animationOptions} />
@@ -111,7 +121,16 @@ function Home() {
   );
 }
 
-function AnimatedSection({ id, title, paragraph, images, reverse, options }) {
+function AnimatedSection({
+  id,
+  title,
+  paragraph,
+  images,
+  reverse,
+  options,
+  buttonLink,
+  buttonText
+}) {
   const { ref, inView } = useInView(options);
 
   return (
@@ -125,6 +144,11 @@ function AnimatedSection({ id, title, paragraph, images, reverse, options }) {
         <>
           <div className="text-R1">
             <AnimatedText title={title} paragraph={paragraph} />
+            {buttonLink && buttonText && (
+              <a href={buttonLink} className="button-link">
+                {buttonText}
+              </a>
+            )}
           </div>
           <div className="CarR-1 slider">
             <Slider images={images} />
@@ -137,11 +161,18 @@ function AnimatedSection({ id, title, paragraph, images, reverse, options }) {
           </div>
           <div className="text-R1">
             <AnimatedText title={title} paragraph={paragraph} />
+            {buttonLink && buttonText && (
+              <a href={buttonLink} className="button-link">
+                {buttonText}
+              </a>
+            )}
           </div>
         </>
       )}
     </div>
   );
 }
+
+
 
 export default Home;

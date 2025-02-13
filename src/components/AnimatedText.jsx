@@ -5,7 +5,7 @@ import '../styles/AnimatedText.css';
 function AnimatedText({ title, paragraph, buttonLink, buttonText }) {
   const containerRef = useRef();
   const [isVisible, setIsVisible] = useState(false);
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // Используем навигацию React Router
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -34,8 +34,8 @@ function AnimatedText({ title, paragraph, buttonLink, buttonText }) {
         {title}
       </h1>
       <p className={`animated-paragraph ${isVisible ? 'visible' : ''}`} dangerouslySetInnerHTML={{ __html: paragraph }} />
-      
-      {/* Показываем кнопку только если переданы `buttonLink` и `buttonText` */}
+
+      {/* Показываем кнопку, только если переданы `buttonLink` и `buttonText` */}
       {buttonLink && buttonText && (
         <button onClick={() => navigate(buttonLink)} className="nav-button">
           {buttonText}
