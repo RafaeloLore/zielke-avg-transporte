@@ -9,6 +9,8 @@ import Dienstleistungen from './pages/Dienstleistungen';
 import Datenschutz from './pages/Datenschutz';
 import Impressum from './pages/Impressum';
 import Uberuns from './pages/uberuns';
+import Schütgut from './pages/Schütgut';
+
 import Navbar from './components/Navbar'; // Импортируем Navbar
 import Footer from './components/Footer'; // Импортируем футер
 import ScrollToTopButton from "./components/ScrollToTopButton.jsx"; // Импортируем кнопку
@@ -40,7 +42,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/jobs" element={<Jobs />} />
-        <Route path="/uberuns" element={<Uberuns />} />
+        <Route path="/schütgut" element={<Schütgut/>} />
+        <Route path="/uberuns " element={<Uberuns />} />
         <Route path="/dienstleistungen" element={<Dienstleistungen />} />
         <Route path="/jobs/lkw-fahrer" element={<LKWFahrer />} />
         <Route path="/jobs/lkw-kranfahrer" element={<LKWKranfahrer />} />
