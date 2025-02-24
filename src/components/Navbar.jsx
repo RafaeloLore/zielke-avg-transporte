@@ -3,9 +3,8 @@ import "../styles/Navbar.css";
 
 function Navbar() {
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
-  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
+  const [isTransportOpen, setIsTransportOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  
 
   return (
     <nav>
@@ -25,7 +24,6 @@ function Navbar() {
             <i className="fas fa-times"></i>
           </label>
 
-
           {/* Mega Menu */}
           <li 
             className="dropdown"
@@ -38,31 +36,30 @@ function Navbar() {
 
             <div className={`mega-box ${isMegaMenuOpen ? "open" : ""}`}>
               <div className="content">
-                
 
-                {/* Transport с вложенным меню */}
-                <div className="row submenu-item"
-                  onMouseEnter={() => setIsSubmenuOpen(true)}
-                  onMouseLeave={() => setIsSubmenuOpen(false)}
-                >
-                  <header>Transport</header>
-                  <ul className="mega-links">
+                {/* Transport (Кликабельное подменю) */}
+                <div className="row submenu-item">
+                  <header 
+                    className="clickable" 
+                    onClick={() => setIsTransportOpen(!isTransportOpen)}
+                  >
+                    Transport
+                  </header>
+
+                  <ul className={`mega-links transport-submenu ${isTransportOpen ? "open" : ""}`}>
                     <li><a href="/Schütgut">Schütgut</a></li>
-                    <li><a href="/transport/sea">Absetzcontainer </a></li>
-                    <li><a href="/transport/air">Schwerlast</a></li>
-                    <li><a href="/transport/air">Kran</a></li>
-                    <li><a href="/transport/air">Uberseecontainer</a></li>
+                    <li><a href="/Absetzcontainer">Absetzcontainer</a></li>
+                    <li><a href="/Schwerlast">Schwerlast</a></li>
+                    <li><a href="/Kran">Kran</a></li>
+                    <li><a href="/Uberseecontainer">Überseecontainer</a></li>
                   </ul>
-
-                  {/* Вложенное меню справа */}
-                  
                 </div>
 
                 <div className="row">
                   <ul className="mega-links">
-                    <li><a href="/contact">Erdbau</a></li>
-                    <li><a href="/contact">Baustoff</a></li>
-                    <li><a href="/contact">Entsorgung</a></li>
+                    <li><a href="/Erdbau">Erdbau</a></li>
+                    <li><a href="/Baustoff">Baustoff</a></li>
+                    <li><a href="/Entsorgung">Entsorgung</a></li>
                   </ul>
                 </div>
               </div>
@@ -71,7 +68,7 @@ function Navbar() {
 
           <li><a href="/jobs">Karriere</a></li>
           <li><a href="/contact">KONTAKT</a></li>
-          <li><a href="/contact">Über AVG</a></li>
+          <li><a href="/about">Über AVG</a></li>
         </ul>
 
         <label htmlFor="menu-btn" className="btn menu-btn">

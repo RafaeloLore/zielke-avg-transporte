@@ -23,12 +23,7 @@ function Schütgut() {
           <div className="navbar-menu2">
             <ul className="menu2-list">
               {[
-                'CONTAINERTRANSPORTE',
-                'CONTAINERSERVICE',
-                'SCHÜTTGUTTRANSPORTE',
-                'BAGGERBETRIEB',
-                'TIEFLADERTRANSPORTE',
-                'LKW MIT LADEKRAN',
+               
               ].map((section) => (
                 <li key={section} className="menu2-item">
                   <Link to={section} smooth={true} duration={500}>

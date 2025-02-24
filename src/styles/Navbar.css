@@ -109,6 +109,10 @@ nav .wrapper{
   border-bottom: 1px solid black;
 
 }
+.content .row header:hover{
+  color: #002FCC;
+  transition: 700ms ease;
+}
 .content .row .mega-links{
   margin-left: -40px;
 }
@@ -138,6 +142,54 @@ nav .wrapper{
   right: 30px;
   top: 10px;
 }
+/* Стили для подменю Transport */
+/* Стили для подменю Transport */
+.clickable {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+}
+
+.clickable:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+}
+
+/* Плавная анимация подменю */
+.transport-submenu {
+  list-style: none;
+  padding-left: 20px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.transport-submenu.open {
+  max-height: 600px;
+  opacity: 1;
+}
+
+.transport-submenu li {
+  padding: 5px 0;
+}
+
+.transport-submenu a {
+  color: #d9d9d9;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+
+
+
 
 @media screen and (max-width: 970px) {
   .wrapper .btn{
