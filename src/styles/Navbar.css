@@ -23,8 +23,9 @@ nav .wrapper{
   justify-content: space-between;
 }
 .logo {
+  display: flex;
+  justify-content: center;
   max-width: 150px;
-  margin-top: 15px;
   height: auto;
 }
 .wrapper .nav-links{
@@ -40,7 +41,6 @@ nav .wrapper{
   font-weight: 500;
   padding: 9px 15px;
   transition: color 0.3s ease; /* Анимация смены цвета */
-  text-transform: uppercase;
   transition: 700ms ease;
 }
 .nav-links li a:hover{

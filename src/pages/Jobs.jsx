@@ -13,7 +13,7 @@ function Jobs() {
 
     <div className="jobs-page , content">
       <header className="jobs-header">
-        <h1>Stellenangebote</h1>
+        <h1> AKTUELLE STELLENANGEBOTE</h1>
         <p>Werden Sie Teil unseres Teams und wachsen Sie mit uns!</p>
       </header>
 

@@ -8,9 +8,12 @@ import LKWKranfahrer from './pages/LKWKranfahrer';
 import Dienstleistungen from './pages/Dienstleistungen';
 import Datenschutz from './pages/Datenschutz';
 import Impressum from './pages/Impressum';
+import Schwerlast from './pages/Schwerlast';
 import Uberuns from './pages/uberuns';
-import Schütgut from './pages/Schütgut';
+import Schütgutt from './pages/Schütgutt';
 import Absetzcontainer from './pages/Absetzcontainer';
+import Uberseecontainer from './pages/Uberseecontainer';
+import Kran from './pages/Kran';
 
 import Navbar from './components/Navbar'; // Импортируем Navbar
 import Footer from './components/Footer'; // Импортируем футер
@@ -43,9 +46,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/jobs" element={<Jobs />} />
-        <Route path="/schütgut" element={<Schütgut/>} />
+        <Route path="/schütgutt" element={<Schütgutt/>} />
+        <Route path="/schwerlast" element={<Schwerlast/>} />
         <Route path="/absetzcontainer" element={<Absetzcontainer/>} />
-        <Route path="/uberuns " element={<Uberuns />} />
+        <Route path="/kran" element={<Kran/>} />
+        <Route path="/uberseecontainer" element={<Uberseecontainer/>} />
+        <Route path="/uberuns" element={<Uberuns/>} />
         <Route path="/dienstleistungen" element={<Dienstleistungen />} />
         <Route path="/jobs/lkw-fahrer" element={<LKWFahrer />} />
         <Route path="/jobs/lkw-kranfahrer" element={<LKWKranfahrer />} />

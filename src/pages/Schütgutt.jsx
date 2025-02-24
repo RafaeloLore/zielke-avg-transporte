@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from 'react-scroll';
-import Slider from '../components/Slider';
+import Slider from '../components/Slider.jsx';
 import AnimatedText from '../components/AnimatedText.jsx';
 import { useInView } from 'react-intersection-observer';
 
-function Schütgut() {
+function Schütgutt() {
     const animationOptions = {
         threshold: 0.2, // Срабатывает, если видно 20% элемента
         triggerOnce: true, // Анимация запускается один раз
@@ -77,4 +77,4 @@ return (
   );
 }
 
-export default Schütgut;
+export default Schütgutt;

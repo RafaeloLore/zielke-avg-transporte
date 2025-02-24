@@ -47,7 +47,7 @@ function Navbar() {
                   </header>
 
                   <ul className={`mega-links transport-submenu ${isTransportOpen ? "open" : ""}`}>
-                    <li><a href="/Schütgut">Schütgut</a></li>
+                    <li><a href="/Schütgutt">Schütgutt</a></li>
                     <li><a href="/Absetzcontainer">Absetzcontainer</a></li>
                     <li><a href="/Schwerlast">Schwerlast</a></li>
                     <li><a href="/Kran">Kran</a></li>
@@ -67,8 +67,8 @@ function Navbar() {
           </li>
 
           <li><a href="/jobs">Karriere</a></li>
-          <li><a href="/contact">KONTAKT</a></li>
-          <li><a href="/about">Über AVG</a></li>
+          <li><a href="/contact">Kontakt</a></li>
+          <li><a href="/uberuns">Über AVG</a></li>
         </ul>
 
         <label htmlFor="menu-btn" className="btn menu-btn">
