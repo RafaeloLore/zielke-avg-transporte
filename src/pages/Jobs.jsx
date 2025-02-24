@@ -18,16 +18,7 @@ function Jobs() {
       </header>
 
       <section className="job-list">
-        <div className="job-card">
-          <div className='mini-conText'>
-          <h2>LKW-Kranfahrer</h2>
-          <p><strong>Führerscheinklasse:</strong> C/CE</p>
-          <p>Wir suchen erfahrene LKW-Fahrer für den Gütertransport in ganz Europa.</p>
-          </div>
-          <button className="apply-btn" onClick={() => navigate('/jobs/lkw-kranfahrer')}>
-          Mehr lesen
-          </button>
-        </div>
+        
 
         
 
