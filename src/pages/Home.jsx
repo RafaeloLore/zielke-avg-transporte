@@ -32,11 +32,10 @@ function Home() {
             <div className="navbar-menu2">
               <ul className="menu2-list">
                 {[
-                  'Unsere Dienstleistungen',
                   'Unsere Mission',
-                  'Jobs',
-                  'Material',
-                  'Kontakte',
+                  'Karriere',
+                  'Baustoff',
+                  'Kontakt',
                 ].map((section) => (
                   <li key={section} className="menu2-item">
                     <Link to={section} smooth={true} duration={500}>
@@ -52,16 +51,7 @@ function Home() {
 
       {/* Секции с контентом */}
       {[
-        {
-          id: 'Unsere Dienstleistungen',
-          title: 'Unsere Dienstleistungen',
-          paragraph:
-            'Wir bieten eine Vielzahl von Transportdienstleistungen, darunter:<br>- Containertransporte<br>- Baggerbetrieb<br>- Frachttransporte<br>- Transport von Baumaschinen und vieles mehr!',
-          images: ['./4.jpg'],
-          reverse: false,
-          buttonLink: '/Dienstleistungen',
-          buttonText: 'Dienstleistungen',
-        },
+        
         {
           id: 'Unsere Mission',
           title: 'Unsere Mission',
@@ -77,8 +67,8 @@ function Home() {
           buttonText: 'Über uns',
         },
         {
-          id: 'Jobs',
-          title: 'Jobs',
+          id: 'Karriere',
+          title: 'Karriere',
           paragraph:
             'Werden Sie Teil unseres Teams! Starten Sie Ihre Karriere in einem Unternehmen, das Talent schätzt und Wachstum fördert.<br><br>'
             + '<b>Das bieten wir Ihnen</b><br>'
@@ -95,24 +85,34 @@ function Home() {
           buttonText: 'Stellenangebote',
         },
         {
-          id: 'Material',
-          title: 'Material',
+          id: 'Baustoff',
+          title: 'Baustoff',
           paragraph:
-            'Wenn Sie nicht die passende Dienstleistung finden, die Sie benötigen, schreiben Sie uns einfach oder rufen Sie uns an. Wir informieren Sie gerne individuell und finden die beste Lösung für Sie.',
-          images: ['./material.JPG'],
+            '' 
+            + '- Sand<br>'
+            + '- Estrichsand<br>'
+            + '- Kies<br>'
+            + '- Edelsplitt<br>'
+            + '- Schotter<br>'
+            + '- Recycling<br>'
+            + '- Pflanzboden<br>'
+            + 'Wenn Sie nicht die passende Baustoff finden, die Sie benötigen, schreiben Sie uns einfach oder rufen Sie uns an. Wir informieren Sie gerne individuell und finden die beste Lösung für Sie.',
+         
+         
+            images: ['./material.JPG'],
           reverse: true,
           buttonLink: '/contact',
-          buttonText: 'Kontakte',
+          buttonText: 'Kontakt',
         },
         {
-          id: 'Kontakte',
-          title: 'Kontakte',
+          id: 'Kontakt',
+          title: 'Kontakt',
           paragraph:
             'Kontaktieren Sie uns! Unser Team hilft Ihnen gerne weiter.',
           images: ['./6.jpg'],
           reverse: false,
           buttonLink: '/contact',
-          buttonText: 'Kontakte',
+          buttonText: 'Kontakt',
         },
       ].map((section) => (
         <AnimatedSection key={section.id} {...section} options={animationOptions} />

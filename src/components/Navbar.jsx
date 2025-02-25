@@ -36,25 +36,29 @@ function Navbar() {
 
             <div className={`mega-box ${isMegaMenuOpen ? "open" : ""}`}>
               <div className="content">
+                
+                {/* Transport (Кликабельное подменю, открывающееся СПРАВА) */}
+                <div 
+                  className="row submenu-item"
+                  onMouseEnter={() => setIsTransportOpen(true)}
+                  onMouseLeave={() => setIsTransportOpen(false)}
+                >
+                  <header className="clickable">Transport</header>
 
-                {/* Transport (Кликабельное подменю) */}
-                <div className="row submenu-item">
-                  <header 
-                    className="clickable" 
-                    onClick={() => setIsTransportOpen(!isTransportOpen)}
-                  >
-                    Transport
-                  </header>
-
-                  <ul className={`mega-links transport-submenu ${isTransportOpen ? "open" : ""}`}>
-                    <li><a href="/Schütgutt">Schütgutt</a></li>
-                    <li><a href="/Absetzcontainer">Absetzcontainer</a></li>
-                    <li><a href="/Schwerlast">Schwerlast</a></li>
-                    <li><a href="/Kran">Kran</a></li>
-                    <li><a href="/Uberseecontainer">Überseecontainer</a></li>
-                  </ul>
+                  {/* Подменю Transport ВНУТРИ Mega Menu, но справа */}
+                  <div className={`sub-menu-right ${isTransportOpen ? "open" : ""}`}>
+                    <ul className="mega-links">
+                      <li><a href="/Schütgut">Schütgut</a></li>
+                      <li><a href="/Absetzcontainer">Absetzcontainer</a></li>
+                      <li><a href="/Schwerlast">Schwerlast</a></li>
+                      <li><a href="/Kran">Kran</a></li>
+                      <li><a href="/Uberseecontainer">Überseecontainer</a></li>
+                    </ul>
+                  </div>
                 </div>
 
+                {/* Остальные услуги остаются слева */}
+                
                 <div className="row">
                   <ul className="mega-links">
                     <li><a href="/Erdbau">Erdbau</a></li>
@@ -62,6 +66,7 @@ function Navbar() {
                     <li><a href="/Entsorgung">Entsorgung</a></li>
                   </ul>
                 </div>
+
               </div>
             </div>
           </li>
