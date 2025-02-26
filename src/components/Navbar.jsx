@@ -45,11 +45,9 @@ function Navbar() {
                         <a href="javascript:void(0);" class="menu-link mega-menu-link" aria-haspopup="true">Erdbau</a>
                         <ul class="menu menu-list">
                             <li>
-                                <a href="/Erdbau" class="menu-link menu-list-link">1.2.1 Page link</a>
+                                <a href="/Bagger" class="menu-link menu-list-link">Bagger</a>
                             </li>
-                            <li>
-                                <a href="/page" class="menu-link menu-list-link">1.2.2 Page link</a>
-                            </li>
+                            
                         </ul>
                     </li>
                     <li>

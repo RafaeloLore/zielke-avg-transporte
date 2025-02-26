@@ -11,6 +11,7 @@ import Impressum from './pages/Impressum';
 import Schwerlast from './pages/Schwerlast';
 import Uberuns from './pages/uberuns';
 import Schütgutt from './pages/Schütgutt';
+import Bagger from './pages/Bagger';
 import Absetzcontainer from './pages/Absetzcontainer';
 import Uberseecontainer from './pages/Uberseecontainer';
 import Kran from './pages/Kran';
@@ -47,6 +48,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/jobs" element={<Jobs />} />
         <Route path="/schütgutt" element={<Schütgutt/>} />
+        <Route path="/bagger" element={<Bagger/>} />
         <Route path="/schwerlast" element={<Schwerlast/>} />
         <Route path="/absetzcontainer" element={<Absetzcontainer/>} />
         <Route path="/kran" element={<Kran/>} />
