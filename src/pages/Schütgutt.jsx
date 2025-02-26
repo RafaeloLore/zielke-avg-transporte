@@ -44,7 +44,19 @@ function Schütgutt() {
         id: 'SCHÜTTGUTTRANSPORTE',
         title: 'SCHÜTTGUTTRANSPORTE',
         paragraph:
-          'Unser Fuhrpark umfasst verschiedene Auflieger Typen. Wir haben thermoisolierte Kippmulden aber auch gewöhnliche Kippmulden aus Stahl. Dadurch können wir alle Arten von Schüttgütern transportieren. Egal ob es Bauschutt, Beton, Sand, Kies, Schotter, Asphalt oder sogar belastetes Material ist, wir sind für alles ausgerüstet und zertifiziert. Zudem sind viele unserer Fahrzeug mit Allradantrieb ausgestattet, wodurch wir praktisch auf jedem Untergrund unsere Fahrzeuge einsetzten können. Die engsten Be- und Entladestellen stellen für uns auch kein Problem dar, da unser Fuhrpark nicht nur Sattelzüge sondern auch Dreiachser beinhaltet.',
+        '' 
+        + 'Unser moderner Fuhrpark ermöglicht den Transport aller Arten von Schüttgütern – sicher, flexibel und zuverlässig.<br>'
+        + 'Vielseitige Transportmöglichkeiten <br>'
+        + '• Thermoisolierte Kippmulden – ideal für den Transport von Asphalt und temperaturempfindlichen Materialien <br>'
+        + '• Stabile Kippmulden aus Stahl – robust und vielseitig für alle Arten von Schüttgut<br>'
+        + 'Wir transportieren:<br>'
+        + '• Bauschutt und Beton – sicher entsorgt und fachgerecht recycelt<br>'
+        + '• Sand, Kies und Schotter – für Bauprojekte und Landschaftsgestaltung<br>'
+        + '• Asphalt – heiß oder kalt, flexibel und termingerecht geliefert<br>'
+        + '• Belastetes Material – fachgerecht und gemäß den gesetzlichen Vorschriften<br>'
+        +  'Flexibilität und Leistungsstärke Dank Allradantrieb bei vielen unserer Fahrzeuge können wir auch auf schwierigem Untergrund zuverlässig liefern und entladen. Selbst engste Be- und Entladestellen stellen für uns kein Problem dar. Unser Fuhrpark umfasst sowohl Sattelzüge als auch Dreiachser, um Ihnen flexible Transportlösungen zu bieten.'
+        +  'Zertifizierte Qualität und Sicherheit Wir sind zertifiziert und ausgerüstet, um auch belastetes Material sicher und vorschriftsgemäß zu transportieren. Ihre Sicherheit und Zufriedenheit stehen bei uns an erster Stelle.'
+        +  'Individuelle Beratung und Angebot Kontaktieren Sie uns für ein individuelles Angebot – wir finden die optimale Lösung für Ihren Schüttguttransport.',
         images: ['./B-1.jpg', './B-2.jpg'],
       },
     
