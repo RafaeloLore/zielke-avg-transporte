@@ -7,6 +7,7 @@
   margin: 0 auto; /* Центрируем слайдер */
   overflow: hidden; /* Скрываем всё, что выходит за границы */
   background-color: #000; /* Чёрный фон для загрузки */
+  
 }
 
 /* Слайды */
@@ -20,6 +21,7 @@
   background-position: center; /* Центрируем изображение */
   opacity: 0; /* Прячем все слайды */
   transition: opacity 1s ease-in-out; /* Плавное появление */
+  
 }
 
 /* Активный слайд */

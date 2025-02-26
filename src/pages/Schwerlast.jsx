@@ -41,9 +41,26 @@ function Schwerlast() {
     
     {
       id: 'TIEFLADERTRANSPORTE',
-      title: 'TIEFLADERTRANSPORTE',
+      title: 'SCHWERLAST',
       paragraph:
-        'Haben sie sperrige Transportgüter, wie Baumaschinen, Betonteile oder Kranteile zu transportieren? Dann eignet sich unser Tieflader perfekt für Sie. Gerne können Sie auch unseren Tieflader für den Eigenbedarf mieten. Kontaktieren Sie uns doch bei Bedarf und wir unterbreiten Ihnen ein individuelles Angebot.',
+    ''
+    +'<br>'
+   +'<b>Haben Sie schwere und sperrige Transportgüter wie Baumaschinen, Betonteile oder Kranteile zu transportieren?</b> Dann ist unser Tieflader die ideale Lösung für Sie.<br>'
+   +'<br>'
+
+   +'<b>Unsere Schwerlast-Transportleistungen:</b><br>'
+   
+   +'• Transport von Baumaschinen – sicher und effizient zur Baustelle<br>'
+   +'• Betonteile und Fertigteile – stabil und zuverlässig geliefert<br>'
+   +'• Kranteile und Großkomponenten – professioneller Schwerlasttransport<br>'
+   +'<br>'
+
+   +'<b>Tieflader mieten für Ihren Bedarf</b><br>'
+   +'Sie können unseren Tieflader auch für den Eigenbedarf mieten, um Ihre Transporte flexibel und selbstständig durchzuführen.<br>'
+   +'<br>'
+
+   +'<b>Individuelle Angebote und Beratung</b><br>'
+   +'Kontaktieren Sie uns bei Bedarf – wir erstellen Ihnen gerne ein individuelles Angebot, das auf Ihre Anforderungen zugeschnitten ist.<br>',
       images: ['./D-1.jpg'],
     },
     

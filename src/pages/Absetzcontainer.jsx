@@ -41,21 +41,31 @@ function Absetzcontainer() {
     
     {
         id: 'CONTAINERSERVICE',
-        title: 'CONTAINERSERVICE',
+        title: 'ABSETZCONTAINER',
         paragraph:
-        + 'Absetzcontainer – Flexibel und Zuverlässig<br>'
-        + 'Sie suchen Absetzcontainer? Wir bieten Ihnen Absetzcontainer von 5 m³ bis 10 m³ für verschiedenste Einsatzzwecke an. Egal, ob für Baustellen, Gartenarbeiten oder Entrümpelungen – bei uns finden Sie den passenden Container.<br>'
-        + 'Unsere Absetzcontainer eignen sich ideal für die Entsorgung von:<br>'
+        '' 
+        + '<br>' 
+
+        + '<b>Absetzcontainer – Flexibel und Zuverlässig</b><br>'
+        + 'Sie suchen Absetzcontainer? Wir bieten Ihne<b> Absetzcontainer von 5 m³ bis 10 m³ für verschiedenste Einsatzzwecke an.</b> Egal, ob für Baustellen, Gartenarbeiten oder Entrümpelungen – bei uns finden Sie den passenden Container.<br>'
+        + '<br>' 
+
+        + '<b>Unsere Absetzcontainer eignen sich ideal für die Entsorgung von:</b><br>'
+        
         + '• Bauschutt<br>'
         + '• Erdaushub<br>'
         + '• Altholz<br>'
         + '• Baustellenmischabfällen<br>'
         + '• Gipsabfällen<br>'
         + '• Asphalt und vieles mehr.<br>'
-        + 'Schüttgüter Lieferung direkt zur Baustelle<br>'
+        + '<br>' 
+
+        + '<b>Schüttgüter Lieferung direkt zur Baustelle</b><br>'
         + 'Neben Containern liefern wir auch Schüttgüter wie Schotter, Mutterboden, Sand und Kies direkt zu Ihrer Baustelle. Ideal für Bauprojekte, Garten- und Landschaftsbau oder Renovierungen.<br>'
-        + 'Schnelle und Zuverlässige Containerstellung<br>'
-        + 'Die Stellung der Container erfolgt schnell und zuverlässig.',
+        + '<br>' 
+
+        + '<b>Schnelle und Zuverlässige Containerstellung</b><br>'
+        + '<b>Die Stellung der Container erfolgt schnell und zuverlässig.</b>',
         images: ['./F-1.jpg', './F-2.jpg', './F-3.jpg'],
       },
     

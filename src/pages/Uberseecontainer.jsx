@@ -40,9 +40,24 @@ function Uberseecontainer() {
     
     {
         id: 'CONTAINERTRANSPORTE',
-        title: 'CONTAINERTRANSPORTE',
+        title: 'Überseecontainer',
         paragraph:
-          'Wenn Sie auf der Suche nach einem kompetenten Transportunternehmen für Container sind, dann sind Sie bei uns genau richtig! Wir sind mit unseren Containerchassis und langjähriger Erfahrung in der Branche bestens für einen Transport von 20-, 30-, 40- und 45-Fuß-Containern aufgestellt.',
+        '' 
+        + '<br>' 
+        +'<b>Wir bieten zuverlässigen Transport von Überseecontainern direkt vom Hafen bis zu Ihrem Zielort und umgekehrt.</b> Mit unserer langjährigen Erfahrung und modernen Containerchassis sorgen wir für eine sichere und pünktliche Lieferung Ihrer Container.<br>' 
+        + '<br>' 
+        +'<b>Wir transportieren:</b>'
+        + '<br>' 
+        +'• <b>20-Fuß-Container</b> – ideal für kleinere Ladungen<br>' 
+        +'• <b>30-Fuß-Container</b> – flexibel und vielseitig einsetzbar<br>' 
+        +'• <b>40-Fuß-Container</b> – für große Güter und umfangreiche Fracht<br>' 
+        +'• <b>45-Fuß-Container</b> – maximale Kapazität für effizienten Transport<br>' 
+        + '<br>' 
+        +'<b>Flexibilität und Zuverlässigkeit</b><br>' 
+        +'Wir übernehmen die Abholung der Überseecontainer direkt aus dem Hafen und transportieren sie sicher bis zum gewünschten Zielort. Ebenso sorgen wir für die pünktliche Lieferung Ihrer Container zum Hafen für den Weitertransport. Unser erfahrenes Team plant und organisiert den Transport präzise und effizient, um eine termingerechte Lieferung zu gewährleisten.<br>' 
+        + '<br>' 
+        +'<b>Moderne Technik und vielseitiger Einsatz</b><br>' 
+        +'Mit unseren Containerchassis sind wir flexibel aufgestellt und können Überseecontainer unterschiedlichster Größen sicher und effizient transportieren.',
         images: ['./R-1.jpg', './R-2.jpg', './R-3.jpg'],
       },
     

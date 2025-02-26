@@ -56,11 +56,14 @@ function Home() {
           id: 'Unsere Mission',
           title: 'Unsere Mission',
           paragraph:
-            'Wir streben nach höchster Qualität und arbeiten täglich daran, dieses Ziel zu erreichen.<br><br>'
+        '<br>'
+          + '<b>Höchste Qualität und Zuverlässigkeit stehen bei uns an erster Stelle.</b> Wir arbeiten täglich mit Leidenschaft daran, Ihnen den bestmöglichen Service zu bieten und Ihre Erwartungen zu übertreffen.<br><br>'
             + '<b>Unsere Werte</b><br>'
-            + '- Qualität und Zuverlässigkeit – Wir garantieren hohe Standards in allem, was wir tun.<br>'
-            + '- Teamarbeit und Respekt – Gemeinsam erreichen wir mehr.<br>'
-            + '- Innovation und Entwicklung – Wir fördern Kreativität und persönliches Wachstum.',
+            + '• Qualität und Zuverlässigkeit – Wir garantieren hohe Standards in allem, was wir tun, und stehen zu unseren Versprechen.<br>'
+            + '• Teamarbeit und Respekt – Gemeinsam erreichen wir mehr. Wir schätzen Vielfalt und gegenseitigen Respekt und fördern eine positive Arbeitsatmosphäre.<br>'
+            + '• Innovation und Entwicklung – Wir fördern Kreativität und persönliches Wachstum und setzen auf kontinuierliche Weiterentwicklung, um stets die besten Lösungen zu bieten.<br>'
+            + '<br>'
+            + '<b>Ihre Zufriedenheit ist unser Antrieb.</b> Mit Leidenschaft und Engagement arbeiten wir daran, nachhaltige Werte zu schaffen und langfristige Partnerschaften aufzubauen.',
           images: ['./2.jpg'],
           reverse: true,
           buttonLink: '/Uberuns',
@@ -70,11 +73,12 @@ function Home() {
           id: 'Karriere',
           title: 'Karriere',
           paragraph:
-            'Werden Sie Teil unseres Teams! Starten Sie Ihre Karriere in einem Unternehmen, das Talent schätzt und Wachstum fördert.<br><br>'
+          '<br>'
+          + '<b>Werden Sie Teil unseres Teams!</b> Starten Sie Ihre Karriere in einem Unternehmen, das Talent schätzt und Wachstum fördert.<br><br>'
             + '<b>Das bieten wir Ihnen</b><br>'
-            + '- Attraktives Gehalt und Boni<br>'
-            + '- Weiterbildungs- und Aufstiegsmöglichkeiten<br>'
-            + '- Ein motiviertes Team und angenehmes Arbeitsklima<br><br>'
+            + '• Attraktives Gehalt und Boni<br>'
+            + '• Weiterbildungs- und Aufstiegsmöglichkeiten<br>'
+            + '• Ein motiviertes Team und angenehmes Arbeitsklima<br><br>'
             + '<b>Bewerbung</b><br>'
             + 'So einfach bewerben Sie sich bei uns: Klicken Sie auf "Bewerben" und senden Sie uns Ihr Profil.',
           images: ['./5.jpg'],
@@ -82,21 +86,23 @@ function Home() {
           buttonLink: '/Uberuns',
           buttonText: 'Mehr Infos',
           buttonLink: '/jobs',
-          buttonText: 'Stellenangebote',
+          buttonText: 'Bewerben',
         },
         {
           id: 'Baustoff',
           title: 'Baustoff',
           paragraph:
-            '' 
-            + '- Sand<br>'
-            + '- Estrichsand<br>'
-            + '- Kies<br>'
-            + '- Edelsplitt<br>'
-            + '- Schotter<br>'
-            + '- Recycling<br>'
-            + '- Pflanzboden<br>'
-            + 'Wenn Sie nicht die passende Baustoff finden, die Sie benötigen, schreiben Sie uns einfach oder rufen Sie uns an. Wir informieren Sie gerne individuell und finden die beste Lösung für Sie.',
+          '' 
+          + '<br>' 
+            + '• Sand<br>'
+            + '• Estrichsand<br>'
+            + '• Kies<br>'
+            + '• Edelsplitt<br>'
+            + '• Schotter<br>'
+            + '• Recycling<br>'
+            + '• Pflanzboden<br>'
+            + '<br>'
+            + 'Wenn Sie nicht die passende Baustoff finden, die Sie benötigen, schreiben Sie uns einfach oder rufen Sie uns an.<b> Wir informieren Sie gerne individuell und finden die beste Lösung für Sie.</b>',
          
          
             images: ['./material.JPG'],
@@ -108,7 +114,8 @@ function Home() {
           id: 'Kontakt',
           title: 'Kontakt',
           paragraph:
-            'Kontaktieren Sie uns! Unser Team hilft Ihnen gerne weiter.',
+          '<br>'
+            +'Kontaktieren Sie uns! Unser Team hilft Ihnen gerne weiter.',
           images: ['./6.jpg'],
           reverse: false,
           buttonLink: '/contact',

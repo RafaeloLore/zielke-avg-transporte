@@ -42,21 +42,32 @@ function Schütgutt() {
     
       {
         id: 'SCHÜTTGUTTRANSPORTE',
-        title: 'SCHÜTTGUTTRANSPORTE',
+        title: 'SCHÜTTGUTT',
         paragraph:
         '' 
+        + '<br>' 
         + 'Unser moderner Fuhrpark ermöglicht den Transport aller Arten von Schüttgütern – sicher, flexibel und zuverlässig.<br>'
-        + 'Vielseitige Transportmöglichkeiten <br>'
+        + '<br>' 
+
+        + '<b>Vielseitige Transportmöglichkeiten Wir verfügen über verschiedene Auflieger-Typen, darunter:</b> <br>'
         + '• Thermoisolierte Kippmulden – ideal für den Transport von Asphalt und temperaturempfindlichen Materialien <br>'
         + '• Stabile Kippmulden aus Stahl – robust und vielseitig für alle Arten von Schüttgut<br>'
-        + 'Wir transportieren:<br>'
+        + '<br>' 
+
+        + '<b>Wir transportieren:</b><br>'
         + '• Bauschutt und Beton – sicher entsorgt und fachgerecht recycelt<br>'
         + '• Sand, Kies und Schotter – für Bauprojekte und Landschaftsgestaltung<br>'
         + '• Asphalt – heiß oder kalt, flexibel und termingerecht geliefert<br>'
         + '• Belastetes Material – fachgerecht und gemäß den gesetzlichen Vorschriften<br>'
-        +  'Flexibilität und Leistungsstärke Dank Allradantrieb bei vielen unserer Fahrzeuge können wir auch auf schwierigem Untergrund zuverlässig liefern und entladen. Selbst engste Be- und Entladestellen stellen für uns kein Problem dar. Unser Fuhrpark umfasst sowohl Sattelzüge als auch Dreiachser, um Ihnen flexible Transportlösungen zu bieten.'
-        +  'Zertifizierte Qualität und Sicherheit Wir sind zertifiziert und ausgerüstet, um auch belastetes Material sicher und vorschriftsgemäß zu transportieren. Ihre Sicherheit und Zufriedenheit stehen bei uns an erster Stelle.'
-        +  'Individuelle Beratung und Angebot Kontaktieren Sie uns für ein individuelles Angebot – wir finden die optimale Lösung für Ihren Schüttguttransport.',
+        + '<br>' 
+
+        +  'Flexibilität und Leistungsstärke Dank Allradantrieb bei vielen unserer Fahrzeuge können wir auch auf schwierigem Untergrund zuverlässig liefern und entladen. Selbst engste Be- und Entladestellen stellen für uns kein Problem dar. Unser Fuhrpark umfasst sowohl Sattelzüge als auch Dreiachser, um Ihnen flexible Transportlösungen zu bieten.<br>'
+        + '<br>' 
+
+        +  'Zertifizierte Qualität und Sicherheit Wir sind zertifiziert und ausgerüstet, um auch belastetes Material sicher und vorschriftsgemäß zu transportieren. Ihre Sicherheit und Zufriedenheit stehen bei uns an erster Stelle.<br>'
+        + '<br>' 
+
+        +  '<b>Individuelle Beratung und Angebot Kontaktieren Sie uns für ein individuelles Angebot – wir finden die optimale Lösung für Ihren Schüttguttransport.</b>',
         images: ['./B-1.jpg', './B-2.jpg'],
       },
     
