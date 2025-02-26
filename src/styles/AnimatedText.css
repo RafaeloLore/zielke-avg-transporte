@@ -1,6 +1,5 @@
 /* Контейнер */
 .animated-container {
-  text-align: center;
   margin: 20px 0;
 }
 
@@ -9,6 +8,8 @@
   opacity: 0;
   transform: translateY(-20px); /* Смещение вверх */
   transition: opacity 1s ease-out, transform 1s ease-out; /* Плавная анимация */
+  text-align: center;
+
 }
 
 .animated-title.visible {

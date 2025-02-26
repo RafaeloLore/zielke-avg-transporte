@@ -43,7 +43,19 @@ function Absetzcontainer() {
         id: 'CONTAINERSERVICE',
         title: 'CONTAINERSERVICE',
         paragraph:
-          'Wir können Ihnen Absetzcontainer von 5 m³ bis 10 m³ zur Verfügung stellen. Darüber hinaus liefern wir Schüttgüter wie Schotter, Mutterboden, Sand, Kies für Ihre Baustelle. In unseren Absetzcontainern können Sie problemlos Bauschut, Erdaushub, Altholz, Baustellenmischabfälle, Gipsabfälle, Gartenabfälle, Asphalt und vieles mehr entsorgen. Die Stellung der Container erfolgt durch modernste Fahrzeuge unseres telematikgesteuerten Fuhrparks.',
+        + 'Absetzcontainer – Flexibel und Zuverlässig<br>'
+        + 'Sie suchen Absetzcontainer? Wir bieten Ihnen Absetzcontainer von 5 m³ bis 10 m³ für verschiedenste Einsatzzwecke an. Egal, ob für Baustellen, Gartenarbeiten oder Entrümpelungen – bei uns finden Sie den passenden Container.<br>'
+        + 'Unsere Absetzcontainer eignen sich ideal für die Entsorgung von:<br>'
+        + '• Bauschutt<br>'
+        + '• Erdaushub<br>'
+        + '• Altholz<br>'
+        + '• Baustellenmischabfällen<br>'
+        + '• Gipsabfällen<br>'
+        + '• Asphalt und vieles mehr.<br>'
+        + 'Schüttgüter Lieferung direkt zur Baustelle<br>'
+        + 'Neben Containern liefern wir auch Schüttgüter wie Schotter, Mutterboden, Sand und Kies direkt zu Ihrer Baustelle. Ideal für Bauprojekte, Garten- und Landschaftsbau oder Renovierungen.<br>'
+        + 'Schnelle und Zuverlässige Containerstellung<br>'
+        + 'Die Stellung der Container erfolgt schnell und zuverlässig.',
         images: ['./F-1.jpg', './F-2.jpg', './F-3.jpg'],
       },
     
