@@ -4,7 +4,7 @@ import Slider from '../components/Slider.jsx';
 import AnimatedText from '../components/AnimatedText.jsx';
 import { useInView } from 'react-intersection-observer';
 
-function Bagger() {
+function Entsorgung() {
     const animationOptions = {
         threshold: 0.2, // Срабатывает, если видно 20% элемента
         triggerOnce: true, // Анимация запускается один раз
@@ -42,7 +42,7 @@ function Bagger() {
     
       {
         id: 'SCHÜTTGUTTRANSPORTE',
-        title: 'Bagger',
+        title: 'Entsorgung',
         paragraph:
         '' 
         + '<br>' 
@@ -60,7 +60,7 @@ function Bagger() {
         +  '<br>' 
         +  '<b>Moderne Bagger und erfahrenes Team</b><br>'
         +  'Unser erfahrenes Team und moderne Bagger gewährleisten eine schnelle und präzise Ausführung aller Arbeiten. Mit unserer Fachkompetenz und Zuverlässigkeit setzen wir Ihre Projekte termingerecht und kosteneffizient um.',
-        images: ['./C-1.png', './C-2.jpg', './C-3.jpg'],
+        images: ['./B-1.jpg', './B-2.jpg'],
       },
     
     ].map((section) => (
@@ -92,4 +92,4 @@ return (
   );
 }
 
-export default Bagger;
+export default Entsorgung;

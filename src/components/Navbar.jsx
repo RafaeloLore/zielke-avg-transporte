@@ -52,7 +52,7 @@ function Navbar() {
                     </li>
                     <li>
                     <li>
-                        <a href="/Baustoff" class="menu-link mega-menu-link">Baustoff</a>
+                        <a href="/Baustoffe" class="menu-link mega-menu-link">Baustoff</a>
                     </li>
                     </li>
                     <li>

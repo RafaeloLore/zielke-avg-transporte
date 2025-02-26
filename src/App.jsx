@@ -8,6 +8,8 @@ import LKWKranfahrer from './pages/LKWKranfahrer';
 import Dienstleistungen from './pages/Dienstleistungen';
 import Datenschutz from './pages/Datenschutz';
 import Impressum from './pages/Impressum';
+import Entsorgung from './pages/Entsorgung';
+import Baustoffe from './pages/Baustoffe';
 import Schwerlast from './pages/Schwerlast';
 import Uberuns from './pages/uberuns';
 import Schütgutt from './pages/Schütgutt';
@@ -49,6 +51,8 @@ function App() {
         <Route path="/jobs" element={<Jobs />} />
         <Route path="/schütgutt" element={<Schütgutt/>} />
         <Route path="/bagger" element={<Bagger/>} />
+        <Route path="/baustoffe" element={<Baustoffe/>} />
+        <Route path="/entsorgung" element={<Entsorgung/>} />
         <Route path="/schwerlast" element={<Schwerlast/>} />
         <Route path="/absetzcontainer" element={<Absetzcontainer/>} />
         <Route path="/kran" element={<Kran/>} />
