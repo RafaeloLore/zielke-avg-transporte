@@ -3,7 +3,7 @@ import "../styles/Stats.css"; // Подключаем CSS
 
 const Stats = () => {
   const stats = [
-    { title: "Zufriedene Kunden", start: 9456, end: 12557, duration: 2000 },
+    { title: "Bisher transportierte Frachtmenge", start: 3444000, end: 3744000, duration: 2000, unit: "Tonn" },
     { title: "Recyclingquote von Schrott und Baustoffen", start: 46, end: 97, duration: 1000, isPercentage: true },
     { title: "Jahrelange Erfahrung", start: 7, end: 20, duration: 3000 },
   ];
@@ -40,8 +40,8 @@ const Stats = () => {
         {stats.map((stat, index) => (
           <div key={index} className="stat-item">
             <span className="stat-number">
-              {values[index]}
-              {stat.isPercentage ? "%" : ""}
+              {values[index].toLocaleString()} {/* Форматируем число с разделением тысяч */}
+              {stat.isPercentage ? "%" : stat.unit ? ` ${stat.unit}` : ""}
             </span>
             <span className="stat-title">{stat.title}</span>
           </div>

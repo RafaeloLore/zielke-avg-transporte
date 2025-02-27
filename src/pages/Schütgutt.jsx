@@ -74,8 +74,13 @@ function Schütgutt() {
     ))}
 
     {/* Контактная информация */}
+    <section className="grey">
+    <div className="slogan">
+      <h4> Für jede Ladung die richtige Lösung!</h4>
+    </div>
     {/* Контактная информация */}
     <div ref={blueMenuRef} className={`blueMenu ${blueMenuInView ? 'visible' : ''}`}>
+      
     <div className="blue">
       <h5>Unsere Leistungen im Schüttgutt</h5>
       <p className="bluetext">• Bauschutt und Beton – sicher entsorgt und fachgerecht recycelt</p>
@@ -87,6 +92,7 @@ function Schütgutt() {
       <p className="bluetext">• Belastetes Material – fachgerecht und gemäß den gesetzlichen Vorschriften</p>
     </div>
   </div>
+  </section>
   </div>
 );
 }

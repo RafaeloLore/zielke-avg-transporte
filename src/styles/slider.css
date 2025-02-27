@@ -2,7 +2,7 @@
 .slider {
   position: relative;
   width: 100%;
-  max-width: 1200px; /* Максимальная ширина слайдера */
+  max-width: 1000px; /* Максимальная ширина слайдера */
   height: 800px; /* Высота слайдера */
   margin: 0 auto; /* Центрируем слайдер */
   overflow: hidden; /* Скрываем всё, что выходит за границы */

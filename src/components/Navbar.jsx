@@ -74,7 +74,7 @@ function Navbar() {
                 <a href="/contact" className="menu-link menu-bar-link">Kontakt</a>
             </li>
             <li>
-                <a href="/uberuns" className="menu-link menu-bar-link">Über AVG</a>
+                <a href="/uberuns" className="menu-link menu-bar-link">Über uns</a>
             </li>
               
 

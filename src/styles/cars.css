@@ -1,9 +1,9 @@
 .sectioncarR1{
    display: flex;
+   align-items: center;
    position: relative; /* Устанавливаем родителю относительное позиционирование */
     background-color: rgb(255, 255, 255);
     z-index: 2;
-   border-bottom: 1px solid black;
    padding: 20px;
 
 }
@@ -85,9 +85,13 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 350px;
-    margin-bottom: 150px;
+   
     
+  }
+  .grey{
+    padding: 150px;
+    padding-bottom: 150px;
+    background-color: rgb(241, 240, 240);
   }
   .blue{
     background-color: blue;
@@ -100,7 +104,14 @@ p{
   .bluetext{
     font-size: 20px;
   }
-  h5{    font-size: 70px;
+  h4{
+    
+    margin: 50px 0px 50px 0px;
+    color: black;
+  text-align: center;
+font-size: 40px;
+}
+  h5{    font-size: 50px;
     padding-bottom: 30px;
   }
   @media (max-width: 1440px) {
