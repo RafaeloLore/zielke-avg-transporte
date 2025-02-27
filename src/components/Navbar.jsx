@@ -7,61 +7,59 @@ function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div class="nav">
+    <div className="nav">
       <nav>
       <div className="navbar-logo">
            <a href="/">
             <img src="./logo.png" alt="Логотип" className="logo" />
           </a>
     </div>
-      <a href="javascript:void(0);" class="mobile-menu-trigger">Open mobile menu</a>
-        <ul class="menu menu-bar">
+      <a href="javascript:void(0);" className="mobile-menu-trigger">Open mobile menu</a>
+        <ul className="menu menu-bar">
             <li>
-                <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Leistungen</a>
-                <ul class="mega-menu mega-menu--multiLevel">
+                <a href="javascript:void(0);" className="menu-link menu-bar-link" aria-haspopup="true">Leistungen</a>
+                <ul className="mega-menu mega-menu--multiLevel">
                     <li>
-                        <a href="javascript:void(0);" class="menu-link mega-menu-link" aria-haspopup="true">Transport</a>
-                        <ul class="menu menu-list">
+                        <a href="javascript:void(0);" className="menu-link mega-menu-link" aria-haspopup="true">Transport</a>
+                        <ul className="menu menu-list">
                             <li>
-                                <a href="/Schütgutt" class="menu-link menu-list-link">Schütgutt</a>
+                                <a href="/Schütgutt" className="menu-link menu-list-link">Schütgutt</a>
                             </li>
                             <li>
-                                <a href="/Absetzcontainer" class="menu-link menu-list-link">Absetzcontainer</a>
+                                <a href="/Absetzcontainer" className="menu-link menu-list-link">Absetzcontainer</a>
                             </li>
                             <li>
-                                <a href="/Schwerlast" class="menu-link menu-list-link">Schwerlast</a>
+                                <a href="/Schwerlast" className="menu-link menu-list-link">Schwerlast</a>
                             </li>
                             <li>
-                                <a href="/Kran" class="menu-link menu-list-link">Kran</a>
+                                <a href="/Kran" className="menu-link menu-list-link">Kran</a>
                             </li>
                             <li>
-                            <a href="/Uberseecontainer" class="menu-link menu-list-link">Überseecontainer</a>
+                            <a href="/Uberseecontainer" className="menu-link menu-list-link">Überseecontainer</a>
 
                             </li>
                             
                         </ul>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" class="menu-link mega-menu-link" aria-haspopup="true">Erdbau</a>
-                        <ul class="menu menu-list">
+                        <a href="javascript:void(0);" className="menu-link mega-menu-link" aria-haspopup="true">Erdbau</a>
+                        <ul className="menu menu-list">
                             <li>
-                                <a href="/Bagger" class="menu-link menu-list-link">Bagger</a>
+                                <a href="/Bagger" className="menu-link menu-list-link">Bagger</a>
                             </li>
                             
                         </ul>
                     </li>
                     <li>
-                    <li>
-                        <a href="/Baustoffe" class="menu-link mega-menu-link">Baustoff</a>
-                    </li>
+                        <a href="/Baustoffe" className="menu-link mega-menu-link">Baustoff</a>
                     </li>
                     <li>
-                        <a href="/Entsorgung" class="menu-link mega-menu-link">Entsorgung</a>
+                        <a href="/Entsorgung" className="menu-link mega-menu-link">Entsorgung</a>
                     </li>
                     
-                    <li class="mobile-menu-back-item">
+                    <li className="mobile-menu-back-item">
                       
-                        <a href="javascript:void(0);" class="menu-link mobile-menu-back-link">Back</a>
+                        <a href="javascript:void(0);" className="menu-link mobile-menu-back-link">Back</a>
                         
                     </li>
                     
@@ -71,17 +69,17 @@ function Navbar() {
             
 
             <li>
-                <a href="/jobs" class="menu-link menu-bar-link">Karriere</a>
+                <a href="/jobs" className="menu-link menu-bar-link">Karriere</a>
             </li> <li>
-                <a href="/contact" class="menu-link menu-bar-link">Kontakt</a>
+                <a href="/contact" className="menu-link menu-bar-link">Kontakt</a>
             </li>
             <li>
-                <a href="/uberuns" class="menu-link menu-bar-link">Über AVG</a>
+                <a href="/uberuns" className="menu-link menu-bar-link">Über AVG</a>
             </li>
               
 
-            <li class="mobile-menu-header">
-                <a href="/home" class="">
+            <li className="mobile-menu-header">
+                <a href="/home" className="">
                     <span>Home</span>
                 </a>
             </li>

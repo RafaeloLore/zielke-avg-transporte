@@ -3,14 +3,17 @@ import { Link } from 'react-scroll';
 import Slider from '../components/Slider.jsx';
 import AnimatedText from '../components/AnimatedText.jsx';
 import { useInView } from 'react-intersection-observer';
-
 function Schütgutt() {
-    const animationOptions = {
-        threshold: 0.2, // Срабатывает, если видно 20% элемента
-        triggerOnce: true, // Анимация запускается один раз
-      };
-  
-  return (
+  const animationOptions = {
+      threshold: 0.2, // Срабатывает, если видно 20% элемента
+      triggerOnce: true, // Анимация запускается один раз
+  };
+
+  // Добавляем наблюдение за blueMenu
+  const { ref: blueMenuRef, inView: blueMenuInView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });  return (
     <div>
     {/* Секция с видео */}
 
@@ -54,17 +57,12 @@ function Schütgutt() {
         + '• Stabile Kippmulden aus Stahl – robust und vielseitig für alle Arten von Schüttgut<br>'
         + '<br>' 
 
-        + '<b>Wir transportieren:</b><br>'
-        + '• Bauschutt und Beton – sicher entsorgt und fachgerecht recycelt<br>'
-        + '• Sand, Kies und Schotter – für Bauprojekte und Landschaftsgestaltung<br>'
-        + '• Asphalt – heiß oder kalt, flexibel und termingerecht geliefert<br>'
-        + '• Belastetes Material – fachgerecht und gemäß den gesetzlichen Vorschriften<br>'
+       + '<b>Flexibilität und Leistungsstärke</b><br>'
+        + 'Dank Allradantrieb bei vielen unserer Fahrzeuge können wir auch auf schwierigem Untergrund zuverlässig liefern und entladen. Selbst engste Be- und Entladestellen stellen für uns kein Problem dar. Unser Fuhrpark umfasst sowohl Sattelzüge als auch Dreiachser, um Ihnen flexible Transportlösungen zu bieten.<br>'
         + '<br>' 
 
-        +  'Flexibilität und Leistungsstärke Dank Allradantrieb bei vielen unserer Fahrzeuge können wir auch auf schwierigem Untergrund zuverlässig liefern und entladen. Selbst engste Be- und Entladestellen stellen für uns kein Problem dar. Unser Fuhrpark umfasst sowohl Sattelzüge als auch Dreiachser, um Ihnen flexible Transportlösungen zu bieten.<br>'
-        + '<br>' 
 
-        +  'Zertifizierte Qualität und Sicherheit Wir sind zertifiziert und ausgerüstet, um auch belastetes Material sicher und vorschriftsgemäß zu transportieren. Ihre Sicherheit und Zufriedenheit stehen bei uns an erster Stelle.<br>'
+        +  '<b>Zertifizierte Qualität und Sicherheit<br></b> Wir sind zertifiziert und ausgerüstet, um auch belastetes Material sicher und vorschriftsgemäß zu transportieren. Ihre Sicherheit und Zufriedenheit stehen bei uns an erster Stelle.<br>'
         + '<br>' 
 
         +  '<b>Individuelle Beratung und Angebot Kontaktieren Sie uns für ein individuelles Angebot – wir finden die optimale Lösung für Ihren Schüttguttransport.</b>',
@@ -76,7 +74,19 @@ function Schütgutt() {
     ))}
 
     {/* Контактная информация */}
-   
+    {/* Контактная информация */}
+    <div ref={blueMenuRef} className={`blueMenu ${blueMenuInView ? 'visible' : ''}`}>
+    <div className="blue">
+      <h5>Unsere Leistungen im Schüttgutt</h5>
+      <p className="bluetext">• Bauschutt und Beton – sicher entsorgt und fachgerecht recycelt</p>
+      <br />
+      <p className="bluetext">• Sand, Kies und Schotter – für Bauprojekte und Landschaftsgestaltung</p>
+      <br />
+      <p className="bluetext">• Asphalt – heiß oder kalt, flexibel und termingerecht geliefert</p>
+      <br />
+      <p className="bluetext">• Belastetes Material – fachgerecht und gemäß den gesetzlichen Vorschriften</p>
+    </div>
+  </div>
   </div>
 );
 }

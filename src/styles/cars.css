@@ -15,8 +15,8 @@ h2{
     justify-content: start;
     flex-direction: column;
     width:950px ;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
     opacity: 0; /* Скрываем текст */
     transform: translateY(20px); /* Смещаем текст вниз */
     animation: fadeIn 1.5s ease-out forwards; /* Запускаем анимацию */
@@ -34,6 +34,17 @@ h2{
   }
 
 
+  .blueMenu {
+    opacity: 0;
+    transform: translateY(30px); /* Начальное положение (сдвиг вниз) */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .blueMenu.visible {
+    opacity: 1;
+    transform: translateY(0); /* Плавно возвращаем в исходное положение */
+  }
+  
 
 
 p{
@@ -70,9 +81,32 @@ p{
     opacity: 1;
     transform: translateY(0);
   }
+  .blueMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 350px;
+    margin-bottom: 150px;
+    
+  }
+  .blue{
+    background-color: blue;
+    width: 70%;
+    height: 450px;
+    border-radius: 5px;
+    padding-top: 40px;
+    padding-left: 40px;
+  }
+  .bluetext{
+    font-size: 20px;
+  }
+  h5{    font-size: 70px;
+    padding-bottom: 30px;
+  }
   @media (max-width: 1440px) {
 
-
+    h5{    font-size: 50px;
+    }
   }
    @media (max-width: 1280px) {
   
@@ -83,7 +117,8 @@ p{
   
   }
   @media (max-width: 800px) {
-   
+    h5{    font-size: 30px;
+    }
   
   }
   @media (max-width: 600px) {
@@ -101,8 +136,14 @@ p{
       transform: translateY(20px); /* Смещаем текст вниз */
       animation: fadeIn 1.5s ease-out forwards; /* Запускаем анимацию */
     }
+    h5{    font-size: 20px;
+    }
+    .bluetext{
+      font-size: 15px;
+    }
     p{
       font-size: 15px;
+  
   
   }
   h1{

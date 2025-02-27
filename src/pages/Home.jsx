@@ -103,7 +103,7 @@ function Home() {
             + '• Pflanzboden<br>'
             + '<br>'
             + 'Wenn Sie nicht die passende Baustoff finden, die Sie benötigen, schreiben Sie uns einfach oder rufen Sie uns an.<b> Wir informieren Sie gerne individuell und finden die beste Lösung für Sie.</b>',
-         
+      
          
             images: ['./material.JPG'],
           reverse: true,
