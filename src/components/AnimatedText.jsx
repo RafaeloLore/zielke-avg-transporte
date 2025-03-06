@@ -33,14 +33,18 @@ function AnimatedText({ title, paragraph, buttonLink, buttonText }) {
       <h1 className={`animated-title ${isVisible ? 'visible' : ''}`}>
         {title}
       </h1>
-      <p className={`animated-paragraph ${isVisible ? 'visible' : ''}`} dangerouslySetInnerHTML={{ __html: paragraph }} />
-
-      {/* Показываем кнопку, только если переданы `buttonLink` и `buttonText` */}
-      {buttonLink && buttonText && (
-        <button onClick={() => navigate(buttonLink)} className="nav-button">
-          {buttonText}
-        </button>
-      )}
+      <p 
+        className={`animated-paragraph ${isVisible ? 'visible' : ''}`} 
+        dangerouslySetInnerHTML={{ __html: paragraph }} 
+      />
+      <div className="button_center"> {/* Исправленный className */}
+        {/* Показываем кнопку, только если переданы `buttonLink` и `buttonText` */}
+        {buttonLink && buttonText && (
+          <button onClick={() => navigate(buttonLink)} className="nav-button">
+            {buttonText}
+          </button>
+        )}
+      </div>
     </div>
   );
 }

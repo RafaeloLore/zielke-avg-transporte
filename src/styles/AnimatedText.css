@@ -1,6 +1,5 @@
 /* Контейнер */
 .animated-container {
-
 }
 
 /* Анимация для заголовка (h1) */
@@ -48,4 +47,8 @@ width: 200px;
   background-color: #002FCC;
   letter-spacing: 1px;
 
+}
+.btncentr{
+  display: flex;
+  justify-content: center;
 }

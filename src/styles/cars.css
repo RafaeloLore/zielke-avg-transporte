@@ -58,18 +58,7 @@ p{
     object-fit: cover; /* Обрезка изображения для заполнения области */
 
 }
-.text-overlay {
-    position: absolute; /* Абсолютное позиционирование для текста */
-    top: 90%; /* От центра экрана */
-    left: 50%; /* От центра экрана */
-    transform: translate(-50%, -50%); /* Центрируем текст */
-    color: white; /* Белый цвет текста */
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Тень для читаемости */
-    padding: 5px; /* Отступы вокруг текста */
-    font-size: 20px; /* Размер шрифта */
-    font-weight: bold; /* Жирный шрифт */
-    background-color: rgba(0, 0, 0, 0.753);
-  }
+
   .sectioncarR1 {
     opacity: 0;
     transform: translateY(50px);

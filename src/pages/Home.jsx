@@ -73,8 +73,8 @@ function Home() {
           id: 'Karriere',
           title: 'Karriere',
           paragraph:
-          '<br>'
-          + '<b>Werden Sie Teil unseres Teams!</b> Starten Sie Ihre Karriere in einem Unternehmen, das Talent schätzt und Wachstum fördert.<br><br>'
+            '<br>'
+            + '<b>Werden Sie Teil unseres Teams!</b> Starten Sie Ihre Karriere in einem Unternehmen, das Talent schätzt und Wachstum fördert.<br><br>'
             + '<b>Das bieten wir Ihnen</b><br>'
             + '• Attraktives Gehalt und Boni<br>'
             + '• Weiterbildungs- und Aufstiegsmöglichkeiten<br>'
@@ -83,11 +83,10 @@ function Home() {
             + 'So einfach bewerben Sie sich bei uns: Klicken Sie auf "Bewerben" und senden Sie uns Ihr Profil.',
           images: ['./5.jpg'],
           reverse: false,
-          buttonLink: '/Uberuns',
-          buttonText: 'Mehr Infos',
-          buttonLink: '/jobs',
-          buttonText: 'Bewerben',
+          buttonLink: '/jobs',  // Оставляем только одну ссылку
+          buttonText: 'Bewerben', // Оставляем один текст кнопки
         },
+        
         {
           id: 'Baustoff',
           title: 'Baustoff',
@@ -152,11 +151,15 @@ function AnimatedSection({
         <>
           <div className="text-R1">
             <AnimatedText title={title} paragraph={paragraph} />
+            <div className='btncentr'>
+
             {buttonLink && buttonText && (
               <a href={buttonLink} className="button-link">
                 {buttonText}
               </a>
             )}
+                        </div>
+
           </div>
           <div className="CarR-1 slider">
             <Slider images={images} />
@@ -169,11 +172,14 @@ function AnimatedSection({
           </div>
           <div className="text-R1">
             <AnimatedText title={title} paragraph={paragraph} />
+            <div className='btncentr'>
             {buttonLink && buttonText && (
               <a href={buttonLink} className="button-link">
                 {buttonText}
               </a>
+              
             )}
+            </div>
           </div>
         </>
       )}
