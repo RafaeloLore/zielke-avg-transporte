@@ -8,10 +8,16 @@ function Schwerlast() {
   const animationOptions = {
     threshold: 0.2, // Срабатывает, если видно 20% элемента
     triggerOnce: true, // Анимация запускается один раз
-  };
-  return (
-    <div>
-    {/* Секция с видео */}
+};
+
+// Добавляем наблюдение за blueMenu
+const { ref: blueMenuRef, inView: blueMenuInView } = useInView({
+  threshold: 0.2,
+  triggerOnce: true,
+});  return (
+  <div>
+  {/* Секция с видео */}
+
 
      
       {/* Секция с меню 2 */}
@@ -48,19 +54,16 @@ function Schwerlast() {
    +'<b>Haben Sie schwere und sperrige Transportgüter wie Baumaschinen, Betonteile oder Kranteile zu transportieren?</b> Dann ist unser Tieflader die ideale Lösung für Sie.<br>'
    +'<br>'
 
-   +'<b>Unsere Schwerlast-Transportleistungen:</b><br>'
+   +'<b>Warum uns wählen?</b><br>'
    
-   +'• Transport von Baumaschinen – sicher und effizient zur Baustelle<br>'
-   +'• Betonteile und Fertigteile – stabil und zuverlässig geliefert<br>'
-   +'• Kranteile und Großkomponenten – professioneller Schwerlasttransport<br>'
-   +'<br>'
-
-   +'<b>Tieflader mieten für Ihren Bedarf</b><br>'
-   +'Sie können unseren Tieflader auch für den Eigenbedarf mieten, um Ihre Transporte flexibel und selbstständig durchzuführen.<br>'
+   +'• Professionelle Planung und Durchführung von Schwerlasttransporten<br>'
+   +'• Flexibilität und Pünktlichkeit – wir richten uns nach Ihrem Zeitplan<br>'
+   +'• Sicherheit an erster Stelle – mit geschultem Personal und hochwertiger Ausrüstung<br>'
    +'<br>'
 
    +'<b>Individuelle Angebote und Beratung</b><br>'
-   +'Kontaktieren Sie uns bei Bedarf – wir erstellen Ihnen gerne ein individuelles Angebot, das auf Ihre Anforderungen zugeschnitten ist.<br>',
+   +'Kontaktieren Sie uns – wir erstellen Ihnen gerne ein individuelles Angebot, das auf Ihre Anforderungen zugeschnitten ist.<br>'
+   +'<br>',
       images: ['./D-1.jpg'],
     },
     
@@ -68,8 +71,31 @@ function Schwerlast() {
       <AnimatedSection key={section.id} {...section} options={animationOptions} />
     ))}
 
+    
     {/* Контактная информация */}
-   
+    <section className="grey">
+    <div className="slogan">
+      <h4>Schwerlastlogistik – stark, zuverlässig, effizient!</h4>
+    </div>
+    {/* Контактная информация */}
+    <div ref={blueMenuRef} className={`blueMenu ${blueMenuInView ? 'visible' : ''}`}>
+      
+    <div className="blue">
+      <h5>Unsere Schwerlast-Transportleistungen:
+      </h5>
+      <p className="bluetext">• Transport von Baumaschinen – sicher und effizient zur Baustelle      </p>
+      <br />
+      <p className="bluetext">• Betonteile und Fertigteile – stabil und zuverlässig geliefert
+      </p>
+      <br />
+      <p className="bluetext">• Große Anlagenteile – professioneller Transport von schweren Komponenten
+      </p>
+      <br />
+      <p className="bluetext">• Sperrige Bau- und Industriegüter – flexibel und sicher ans Ziel gebracht
+      </p>
+    </div>
+  </div>
+  </section>
   </div>
 );
 }

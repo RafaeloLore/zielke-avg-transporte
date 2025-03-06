@@ -23,4 +23,15 @@
   
   }
 
+  const animationOptions = {
+    threshold: 0.2, // Срабатывает, если видно 20% элемента
+    triggerOnce: true, // Анимация запускается один раз
+};
 
+// Добавляем наблюдение за blueMenu
+const { ref: blueMenuRef, inView: blueMenuInView } = useInView({
+  threshold: 0.2,
+  triggerOnce: true,
+});  return (
+  <div>
+  {/* Секция с видео */}

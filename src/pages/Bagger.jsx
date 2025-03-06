@@ -62,6 +62,8 @@ function Bagger() {
         +  '<b>Moderne Bagger und erfahrenes Team</b><br>'
         +  'Unser erfahrenes Team und moderne Bagger gewährleisten eine schnelle und präzise Ausführung aller Arbeiten. Mit unserer Fachkompetenz und Zuverlässigkeit setzen wir Ihre Projekte termingerecht und kosteneffizient um.'
         +  '<b>Individuelle Beratung und Angebot</b><br>'
+        +  '<br>' 
+
         +  'Kontaktieren Sie uns für eine persönliche Beratung und ein individuelles Angebot – wir stehen Ihnen gerne zur Verfügung, um die optimale Lösung für Ihre Erdarbeiten zu finden.',
         images: ['./C-1.png', './C-2.jpg', './C-3.jpg'],
         
@@ -71,19 +73,27 @@ function Bagger() {
       <AnimatedSection key={section.id} {...section} options={animationOptions} />
     ))}
 {/* Контактная информация */}
-<div ref={blueMenuRef} className={`blueMenu ${blueMenuInView ? 'visible' : ''}`}>
-    <div className="blue">
-      <h5>Unsere Leistungen im Baggerbetrieb:
-      </h5>
-      <p className="bluetext">• Aushubarbeiten mit Bagger für Fundamente, Keller und Leitungsgräben</p>
-      <br />
-      <p className="bluetext">• Planierarbeiten zur Vorbereitung von Bauflächen und Gärten</p>
-      <br />
-      <p className="bluetext">• Abtransport und Entsorgung von Erdaushub und Bauschutt</p>
-      <br />
-      <p className="bluetext">• Verfüllarbeiten zur Stabilisierung von Bauwerken</p>
+ {/* Контактная информация */}
+ <section className="grey">
+    <div className="slogan">
+      <h4>  Für jeden Erdaushub die passende Lösung – mit unseren modernen Baggern!</h4>
     </div>
+    {/* Контактная информация */}
+    <div ref={blueMenuRef} className={`blueMenu ${blueMenuInView ? 'visible' : ''}`}>
+      
+    <div className="blue">
+    <h5>Unsere Leistungen im Baggerbetrieb:
+    </h5>
+    <p className="bluetext">• Aushubarbeiten mit Bagger für Fundamente, Keller und Leitungsgräben</p>
+    <br />
+    <p className="bluetext">• Planierarbeiten zur Vorbereitung von Bauflächen und Gärten</p>
+    <br />
+    <p className="bluetext">• Abtransport und Entsorgung von Erdaushub und Bauschutt</p>
+    <br />
+    <p className="bluetext">• Verfüllarbeiten zur Stabilisierung von Bauwerken</p>
   </div>
+  </div>
+  </section>
   </div>
 );
 }

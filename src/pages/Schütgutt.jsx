@@ -87,9 +87,9 @@ function Schütgutt() {
       <br />
       <p className="bluetext">• Sand, Kies und Schotter – für Bauprojekte und Landschaftsgestaltung</p>
       <br />
-      <p className="bluetext">• Asphalt – heiß oder kalt, flexibel und termingerecht geliefert</p>
+      <p className="bluetext">• Asphalt – heiß, flexibel und termingerecht geliefert</p>
       <br />
-      <p className="bluetext">• Belastetes Material – fachgerecht und gemäß den gesetzlichen Vorschriften</p>
+      <p className="bluetext">• Gefährliche Abfälle – fachgerecht und gemäß den gesetzlichen Vorschriften</p>
     </div>
   </div>
   </section>
