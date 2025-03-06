@@ -5,14 +5,19 @@ import AnimatedText from '../components/AnimatedText.jsx';
 import { useInView } from 'react-intersection-observer';
 
 function Baustoffe() {
-    const animationOptions = {
-        threshold: 0.2, // Срабатывает, если видно 20% элемента
-        triggerOnce: true, // Анимация запускается один раз
-      };
-  
-  return (
-    <div>
-    {/* Секция с видео */}
+  const animationOptions = {
+    threshold: 0.2, // Срабатывает, если видно 20% элемента
+    triggerOnce: true, // Анимация запускается один раз
+};
+
+// Добавляем наблюдение за blueMenu
+const { ref: blueMenuRef, inView: blueMenuInView } = useInView({
+  threshold: 0.2,
+  triggerOnce: true,
+});  return (
+  <div>
+  {/* Секция с видео */}
+
 
      
       {/* Секция с меню 2 */}
@@ -46,20 +51,18 @@ function Baustoffe() {
         paragraph:
         '' 
         + '<br>' 
-        + 'Erdarbeiten mit Bagger – Zuverlässig und Präzise Wir bieten Ihnen umfassende Erdarbeiten mit Bagger für Hausbau, Umbau und Anbauten. Mit unseren modernen Baggern führen wir alle anfallenden Arbeiten zuverlässig und präzise aus – von der Baugrubenaushub bis zur Geländemodellierung.<br>'
+        + '<b>Hochwertige Baustoffe für Ihr Projekt</b><br>'
         + '<br>' 
 
-        + '<b>Unsere Leistungen im Überblick:</b> <br>'
-        + '• Aushubarbeiten mit Bagger für Fundamente, Keller und Leitungsgräben <br>'
-        + '• Planierarbeiten zur Vorbereitung von Bauflächen und Gärten<br>'
-        + '• Abtransport und Entsorgung von Erdaushub und Bauschutt<br>'
-        + '• Verfüllarbeiten zur Stabilisierung von Bauwerken<br>'
+        + 'Wir bieten Ihnen eine breite Auswahl an hochwertigen Baustoffen, die optimal auf Ihre Bauprojekte und Gartenarbeiten abgestimmt sind. Egal ob Neubau, Renovierung oder Gartengestaltung – bei uns finden Sie die passenden Materialien. <br>'
+       
         + '<br>' 
 
-        +  '<b>Erdarbeiten für Neubau und Umbau<br></b> Wir unterstützen Sie bei Neubauten, Anbauten und Umbauten mit professionellen Erdarbeiten. Egal, ob es um das Aushub von Baugruben, das Planieren von Bauflächen oder das Verfüllen von Fundamenten geht – unsere Bagger sind vielseitig einsetzbar und sorgen für präzise Ergebnisse<br>'
+        +  '<b>Zuverlässige Lieferung direkt zur Baustelle</b><br>'
+        +  'Mit unserem modernen Fuhrpark liefern wir Ihre Baustoffe termingerecht und flexibel direkt zu Ihrem Bauvorhaben oder Gartenprojekt – auch an schwer zugängliche Stellen.<br>'
         +  '<br>' 
-        +  '<b>Moderne Bagger und erfahrenes Team</b><br>'
-        +  'Unser erfahrenes Team und moderne Bagger gewährleisten eine schnelle und präzise Ausführung aller Arbeiten. Mit unserer Fachkompetenz und Zuverlässigkeit setzen wir Ihre Projekte termingerecht und kosteneffizient um.',
+        +  '<b>Persönliche Beratung und maßgeschneiderte Angebote</b><br>'
+        +  'Kontaktieren Sie uns für eine individuelle Beratung. Wir unterstützen Sie bei der Auswahl der passenden Baustoffe und erstellen Ihnen ein maßgeschneidertes Angebot für Ihr Projekt.',
         images: ['./B-1.jpg', './B-2.jpg'],
       },
     
@@ -67,8 +70,26 @@ function Baustoffe() {
       <AnimatedSection key={section.id} {...section} options={animationOptions} />
     ))}
 
+       {/* Контактная информация */}
+       <section className="grey">
+    <div className="slogan">
+      <h4> Von Sand bis Schotter – alles für Ihren Bau, schnell und zuverlässig!</h4>
+    </div>
     {/* Контактная информация */}
-   
+    <div ref={blueMenuRef} className={`blueMenu ${blueMenuInView ? 'visible' : ''}`}>
+      
+    <div className="blue">
+      <h5>Unsere Baustoffe im Überblick:</h5>
+      <p className="bluetext">• Sand – Vielseitig einsetzbar für Bauarbeiten, Pflasterungen und Gartenprojekte.</p>
+      <p className="bluetext">• Estrichsand – Perfekt geeignet für Estricharbeiten und als Unterbau für Bodenbeläge.</p>
+      <p className="bluetext">• Kies – Für Betonherstellung, Drainagen und als dekoratives Element im Garten.</p>
+      <p className="bluetext">• Edelsplitt – Hochwertiger Splitt für Pflasterarbeiten, Wege und dekorative Flächen.</p>
+      <p className="bluetext">• Schotter – Robuster Unterbau für Wege, Einfahrten und Bauprojekte.</p>
+      <p className="bluetext">• Recycling – Umweltfreundliche Recycling-Baustoffe für nachhaltiges Bauen und Sanieren.</p>
+      <p className="bluetext">• Pflanzboden – Nährstoffreicher Boden für Garten- und Landschaftsbau, ideal für Beete und Rasenflächen.</p>
+    </div>
+  </div>
+  </section>
   </div>
 );
 }

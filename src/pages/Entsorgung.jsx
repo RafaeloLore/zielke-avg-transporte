@@ -5,14 +5,20 @@ import AnimatedText from '../components/AnimatedText.jsx';
 import { useInView } from 'react-intersection-observer';
 
 function Entsorgung() {
-    const animationOptions = {
-        threshold: 0.2, // Срабатывает, если видно 20% элемента
-        triggerOnce: true, // Анимация запускается один раз
-      };
-  
-  return (
-    <div>
-    {/* Секция с видео */}
+   
+  const animationOptions = {
+    threshold: 0.2, // Срабатывает, если видно 20% элемента
+    triggerOnce: true, // Анимация запускается один раз
+};
+
+// Добавляем наблюдение за blueMenu
+const { ref: blueMenuRef, inView: blueMenuInView } = useInView({
+  threshold: 0.2,
+  triggerOnce: true,
+});  return (
+  <div>
+  {/* Секция с видео */}
+
 
      
       {/* Секция с меню 2 */}
@@ -46,20 +52,23 @@ function Entsorgung() {
         paragraph:
         '' 
         + '<br>' 
-        + 'Erdarbeiten mit Bagger – Zuverlässig und Präzise Wir bieten Ihnen umfassende Erdarbeiten mit Bagger für Hausbau, Umbau und Anbauten. Mit unseren modernen Baggern führen wir alle anfallenden Arbeiten zuverlässig und präzise aus – von der Baugrubenaushub bis zur Geländemodellierung.<br>'
+        + '<b>Erdarbeiten mit Bagger </b>– Wir bieten Ihnen professionelle Entsorgungslösungen für verschiedenste Abfallarten sowie effiziente Erdarbeiten. Unser Fokus liegt auf umweltgerechter und gesetzeskonformer Abwicklung, um Ihnen eine sorgenfreie Entsorgung zu ermöglichen.<br>'
         + '<br>' 
 
-        + '<b>Unsere Leistungen im Überblick:</b> <br>'
-        + '• Aushubarbeiten mit Bagger für Fundamente, Keller und Leitungsgräben <br>'
-        + '• Planierarbeiten zur Vorbereitung von Bauflächen und Gärten<br>'
-        + '• Abtransport und Entsorgung von Erdaushub und Bauschutt<br>'
-        + '• Verfüllarbeiten zur Stabilisierung von Bauwerken<br>'
+        + '<b>Flexible Lösungen für Ihre Entsorgung</b> <br>'
+        + 'Egal, ob bei Bauprojekten, Umbauten oder Gartenarbeiten – wir passen unsere Dienstleistungen flexibel an Ihre Bedürfnisse an und sorgen für eine reibungslose Entsorgung.<br>'
         + '<br>' 
 
-        +  '<b>Erdarbeiten für Neubau und Umbau<br></b> Wir unterstützen Sie bei Neubauten, Anbauten und Umbauten mit professionellen Erdarbeiten. Egal, ob es um das Aushub von Baugruben, das Planieren von Bauflächen oder das Verfüllen von Fundamenten geht – unsere Bagger sind vielseitig einsetzbar und sorgen für präzise Ergebnisse<br>'
-        +  '<br>' 
-        +  '<b>Moderne Bagger und erfahrenes Team</b><br>'
-        +  'Unser erfahrenes Team und moderne Bagger gewährleisten eine schnelle und präzise Ausführung aller Arbeiten. Mit unserer Fachkompetenz und Zuverlässigkeit setzen wir Ihre Projekte termingerecht und kosteneffizient um.',
+        + '<b>Effiziente Abwicklung und Nachhaltigkeit</b> <br>'
+        + 'Mit unserer modernen Ausrüstung und erfahrenem Team gewährleisten wir eine effiziente Abwicklung Ihrer Entsorgungsvorhaben. Dabei legen wir großen Wert auf umweltgerechtes Recycling und nachhaltige Verwertung der Abfälle.<br>'
+        + '<br>' 
+
+        + '<b>Sicherheit und Verantwortung</b> <br>'
+        + 'Unsere Entsorgungsprozesse entsprechen den höchsten Sicherheits- und Umweltstandards. Wir sind zertifiziert und garantieren Ihnen eine verantwortungsvolle und sichere Entsorgung.<br>'
+        + '<br>' 
+
+        + '<b>Individuelle Beratung und Angebot</b> <br>'
+        +  'Kontaktieren Sie uns für ein maßgeschneidertes Angebot. Wir beraten Sie gerne und finden die optimale Lösung für Ihre Entsorgungs- und Erdarbeiten.',
         images: ['./B-1.jpg', './B-2.jpg'],
       },
     
@@ -67,8 +76,28 @@ function Entsorgung() {
       <AnimatedSection key={section.id} {...section} options={animationOptions} />
     ))}
 
-    {/* Контактная информация */}
    
+    {/* Контактная информация */}
+    <section className="grey">
+    <div className="slogan">
+      <h4> Entsorgung leicht gemacht – schnell, sicher und umweltfreundlich!</h4>
+    </div>
+    {/* Контактная информация */}
+    <div ref={blueMenuRef} className={`blueMenu ${blueMenuInView ? 'visible' : ''}`}>
+      
+    <div className="blue">
+      <h5>Unsere Entsorgungsleistungen:</h5>
+      <p className="bluetext">• Aushub – Sicherer Abtransport von Erdaushub und Bodenmaterialien. Egal ob bei Bauprojekten, Gartenarbeiten oder Geländeplanierungen – wir entsorgen Ihren Aushub fachgerecht und umweltfreundlich.
+      </p>
+      <p className="bluetext">• Gefährliche Abfälle – Zertifizierte Entsorgung von gefährlichen Stoffen wie Asbest, belastetem Boden oder anderen Schadstoffen. Wir kümmern uns um eine sichere und gesetzeskonforme Entsorgung.
+      </p>
+      <p className="bluetext">• Bauschutt – Effiziente und kostengünstige Entsorgung von Bauschutt und Bauabfällen, wie Beton, Ziegel, Fliesen oder Mischabfällen. Wir sorgen für eine umweltgerechte Verwertung und Entsorgung.
+      </p>
+      <p className="bluetext">• Baggerleistungen – Professionelle Baggerarbeiten für Aushub und Geländevorbereitung. Mit unserem modernen Maschinenpark und erfahrenem Personal garantieren wir präzise und effiziente Arbeiten.
+      </p>
+    </div>
+  </div>
+  </section>
   </div>
 );
 }
