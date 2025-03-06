@@ -112,10 +112,11 @@ function Home() {
         },
         {
           id: 'Kontakt',
-          title: 'Kontakt',
+          title: '',
           paragraph:
           '<br>'
-            +'Kontaktieren Sie uns! Unser Team hilft Ihnen gerne weiter.',
+            +'<b>Haben Sie Fragen? Wir sind für Sie da!</b><br>'
+            +'Kontaktieren Sie uns und lassen Sie sich von unseren Experten beraten. Wir helfen Ihnen gerne, die beste Lösung für Ihr Anliegen zu finden.',
           images: ['./6.jpg'],
           reverse: false,
           buttonLink: '/contact',
