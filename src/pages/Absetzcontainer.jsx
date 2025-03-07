@@ -79,9 +79,7 @@ function Absetzcontainer() {
     <div ref={blueMenuRef} className={`blueMenu ${blueMenuInView ? 'visible' : ''}`}>
       
     <div className="blue">
-      <h5>Unsere Leistungen im Schüttgutt</h5>
-      <p className="bluetext">Unsere Absetzcontainer eignen sich ideal für die Entsorgung von:</p>
-      <br />
+      <h5>Unsere Absetzcontainer eignen sich ideal für die Entsorgung von:</h5>
       <p className="bluetext">• Bauschutt</p>
       <br />
       <p className="bluetext">• Erdaushub</p>

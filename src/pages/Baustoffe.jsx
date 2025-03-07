@@ -81,11 +81,17 @@ const { ref: blueMenuRef, inView: blueMenuInView } = useInView({
     <div className="blue">
       <h5>Unsere Baustoffe im Überblick:</h5>
       <p className="bluetext">• Sand – Vielseitig einsetzbar für Bauarbeiten, Pflasterungen und Gartenprojekte.</p>
+      <br />
       <p className="bluetext">• Estrichsand – Perfekt geeignet für Estricharbeiten und als Unterbau für Bodenbeläge.</p>
+      <br />
       <p className="bluetext">• Kies – Für Betonherstellung, Drainagen und als dekoratives Element im Garten.</p>
+      <br />
       <p className="bluetext">• Edelsplitt – Hochwertiger Splitt für Pflasterarbeiten, Wege und dekorative Flächen.</p>
+      <br />
       <p className="bluetext">• Schotter – Robuster Unterbau für Wege, Einfahrten und Bauprojekte.</p>
+      <br />
       <p className="bluetext">• Recycling – Umweltfreundliche Recycling-Baustoffe für nachhaltiges Bauen und Sanieren.</p>
+      <br />
       <p className="bluetext">• Pflanzboden – Nährstoffreicher Boden für Garten- und Landschaftsbau, ideal für Beete und Rasenflächen.</p>
     </div>
   </div>

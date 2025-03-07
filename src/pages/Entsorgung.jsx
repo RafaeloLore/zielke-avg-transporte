@@ -89,10 +89,13 @@ const { ref: blueMenuRef, inView: blueMenuInView } = useInView({
       <h5>Unsere Entsorgungsleistungen:</h5>
       <p className="bluetext">• Aushub – Sicherer Abtransport von Erdaushub und Bodenmaterialien. Egal ob bei Bauprojekten, Gartenarbeiten oder Geländeplanierungen – wir entsorgen Ihren Aushub fachgerecht und umweltfreundlich.
       </p>
+      <br />
       <p className="bluetext">• Gefährliche Abfälle – Zertifizierte Entsorgung von gefährlichen Stoffen wie Asbest, belastetem Boden oder anderen Schadstoffen. Wir kümmern uns um eine sichere und gesetzeskonforme Entsorgung.
       </p>
+      <br />
       <p className="bluetext">• Bauschutt – Effiziente und kostengünstige Entsorgung von Bauschutt und Bauabfällen, wie Beton, Ziegel, Fliesen oder Mischabfällen. Wir sorgen für eine umweltgerechte Verwertung und Entsorgung.
       </p>
+      <br />
       <p className="bluetext">• Baggerleistungen – Professionelle Baggerarbeiten für Aushub und Geländevorbereitung. Mit unserem modernen Maschinenpark und erfahrenem Personal garantieren wir präzise und effiziente Arbeiten.
       </p>
     </div>
