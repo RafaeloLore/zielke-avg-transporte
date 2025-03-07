@@ -64,7 +64,7 @@ function Home() {
             + '• Innovation und Entwicklung – Wir fördern Kreativität und persönliches Wachstum und setzen auf kontinuierliche Weiterentwicklung, um stets die besten Lösungen zu bieten.<br>'
             + '<br>'
             + '<b>Ihre Zufriedenheit ist unser Antrieb.</b> Mit Leidenschaft und Engagement arbeiten wir daran, nachhaltige Werte zu schaffen und langfristige Partnerschaften aufzubauen.',
-          images: ['./2.jpg'],
+          images: ['./Mission.jpg'],
           reverse: true,
           buttonLink: '/Uberuns',
           buttonText: 'Über uns',
