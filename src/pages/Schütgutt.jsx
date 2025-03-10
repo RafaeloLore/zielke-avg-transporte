@@ -66,7 +66,7 @@ function Schütgutt() {
         + '<br>' 
 
         +  '<b>Individuelle Beratung und Angebot Kontaktieren Sie uns für ein individuelles Angebot – wir finden die optimale Lösung für Ihren Schüttguttransport.</b>',
-        images: ['./B-1.jpg', './B-2.jpg'],
+        images: ['./B-1.jpg', './B-2.jpg','./B-4.jpeg','./B-5.jpeg'],
       },
     
     ].map((section) => (

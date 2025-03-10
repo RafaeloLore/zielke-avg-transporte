@@ -64,7 +64,7 @@ const { ref: blueMenuRef, inView: blueMenuInView } = useInView({
    +'<b>Individuelle Angebote und Beratung</b><br>'
    +'Kontaktieren Sie uns – wir erstellen Ihnen gerne ein individuelles Angebot, das auf Ihre Anforderungen zugeschnitten ist.<br>'
    +'<br>',
-      images: ['./D-1.jpg'],
+      images: ['./D-1.jpg','./D-3.jpeg',],
     },
     
     ].map((section) => (

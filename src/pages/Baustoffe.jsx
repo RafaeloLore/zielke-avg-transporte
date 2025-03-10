@@ -63,7 +63,7 @@ const { ref: blueMenuRef, inView: blueMenuInView } = useInView({
         +  '<br>' 
         +  '<b>Persönliche Beratung und maßgeschneiderte Angebote</b><br>'
         +  'Kontaktieren Sie uns für eine individuelle Beratung. Wir unterstützen Sie bei der Auswahl der passenden Baustoffe und erstellen Ihnen ein maßgeschneidertes Angebot für Ihr Projekt.',
-        images: ['./B-1.jpg', './B-2.jpg'],
+        images: ['./material.JPG'],
       },
     
     ].map((section) => (
