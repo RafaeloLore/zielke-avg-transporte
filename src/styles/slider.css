@@ -44,15 +44,11 @@
 
 }
 @media (max-width: 800px) {
-  .slide{
-    display: none;
-  
-      }
-    .slider{
-      display: none;
-  
-    }
 
+.slider{
+  max-width: 800px; /* Максимальная ширина слайдера */
+  height: 300px; /* Высота слайдера */
+}
 }
 @media (max-width: 600px) {
  

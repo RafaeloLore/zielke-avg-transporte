@@ -10,6 +10,7 @@ function Home() {
     threshold: 0.2, // Срабатывает, если видно 20% элемента
     triggerOnce: true, // Анимация запускается один раз
   };
+  
 
   return (
     <div>
@@ -127,7 +128,6 @@ function Home() {
     </div>
   );
 }
-
 function AnimatedSection({
   id,
   title,
@@ -140,46 +140,51 @@ function AnimatedSection({
 }) {
   const { ref, inView } = useInView(options);
 
+  // Определяем, мобильное ли устройство
+  const isMobile = window.innerWidth <= 768;
+
   return (
     <div
       id={id}
       ref={ref}
       className={`sectioncarR1 ${inView ? 'visible' : 'hidden'} ${reverse ? 'reverse' : ''}`}
     >
-      {/* Меняем порядок блоков в зависимости от reverse */}
       {reverse ? (
         <>
           <div className="text-R1">
             <AnimatedText title={title} paragraph={paragraph} />
-            <div className='btncentr'>
-
             {buttonLink && buttonText && (
-              <a href={buttonLink} className="button-link">
-                {buttonText}
-              </a>
+              <div className='btncentr'>
+                <a href={buttonLink} className="button-link">
+                  {buttonText}
+                </a>
+              </div>
             )}
-                        </div>
-
           </div>
-          <div className="CarR-1 slider">
-            <Slider images={images} />
-          </div>
+          {/* Убираем Slider на мобильных */}
+          {!isMobile && (
+            <div className="CarR-1 slider">
+              <Slider images={images} />
+            </div>
+          )}
         </>
       ) : (
         <>
-          <div className="CarR-1 slider">
-            <Slider images={images} />
-          </div>
+          {/* Убираем Slider на мобильных */}
+          {!isMobile && (
+            <div className="CarR-1 slider">
+              <Slider images={images} />
+            </div>
+          )}
           <div className="text-R1">
             <AnimatedText title={title} paragraph={paragraph} />
-            <div className='btncentr'>
             {buttonLink && buttonText && (
-              <a href={buttonLink} className="button-link">
-                {buttonText}
-              </a>
-              
+              <div className='btncentr'>
+                <a href={buttonLink} className="button-link">
+                  {buttonText}
+                </a>
+              </div>
             )}
-            </div>
           </div>
         </>
       )}
