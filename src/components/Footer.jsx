@@ -10,7 +10,7 @@ function Footer() {
           <p>Senefelderstraße 1K, 63110 Rodgau</p>
           <p>📞 Tel: +49 (0) 6106 7709228</p>
           <p>📠 Fax: +49 (0) 6106 6674339</p>
-          <p>📧 Email: <a href="mailto:info@zielke-avg-transporte.de">info@zielke-avg-transporte.de</a></p>
+          <p>📧 Email: info@zielke-avg-transporte.de</p>
         </div>
 
         <div className="footer-links">

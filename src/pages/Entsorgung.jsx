@@ -69,7 +69,7 @@ const { ref: blueMenuRef, inView: blueMenuInView } = useInView({
 
         + '<b>Individuelle Beratung und Angebot</b> <br>'
         +  'Kontaktieren Sie uns für ein maßgeschneidertes Angebot. Wir beraten Sie gerne und finden die optimale Lösung für Ihre Entsorgungs- und Erdarbeiten.',
-        images: ['./G-1.jpeg' ],
+        images: ['./F-1.jpg' ],
       },
     
     ].map((section) => (

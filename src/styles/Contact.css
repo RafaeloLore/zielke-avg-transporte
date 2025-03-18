@@ -1,7 +1,9 @@
+
+
+
 .background-container {
   position: relative;
   width: 100%;
-  overflow: hidden;
   background: rgba(0, 0, 0, 0.3); /* Затемнение */
 
 }
@@ -20,9 +22,10 @@
 }
 
 .content {
-  position: relative;
- 
-  z-index: 1; /* Поверх размытого фона */
+margin-top: 50px;
+    text-align: center;
+    padding: 40px 20px;
+    
 }
 
 

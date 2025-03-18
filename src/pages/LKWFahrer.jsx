@@ -1,7 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import '../styles/JobDetails.css'; // Подключаем стили
 
 function LKWFahrer() {
+      const navigate = useNavigate(); // Хук для перехода
+  
   return (
     <div className="background-container">
     <div className="job-details">
@@ -23,10 +27,11 @@ function LKWFahrer() {
         <li>• Leistungsgerechte Vergütung – deine Arbeit wird fair entlohnt</li>
         <li>• Moderner Fuhrpark – mit gut ausgestatteten Fahrzeugen und neuester Technik</li>
       </ul>
-
-      <button onClick={() => window.location.href = "mailto:info@zielke-avg-transporte.de?subject=Отклик на вакансию LKWFahrer"}>
+      <button className="apply-btn" onClick={() => navigate('/contact')}>
       Antwort
-      </button>
+          </button>
+
+     
       
     </div>
     </div>

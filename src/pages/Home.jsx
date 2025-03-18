@@ -107,8 +107,8 @@ function Home() {
          
             images: ['./material.JPG'],
           reverse: true,
-          buttonLink: '/contact',
-          buttonText: 'Kontakt',
+          buttonLink: '/baustoffe',
+          buttonText: 'Baustoff',
         },
         {
           id: 'Kontakt',
